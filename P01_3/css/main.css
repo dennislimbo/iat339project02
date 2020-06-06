@@ -1,0 +1,172 @@
+html {
+	font-family: 'Montserrat', sans-serif;
+	margin: 1rem;
+	background-color: #fbf3ec;
+	color: #071013;
+}
+
+section {
+	margin-bottom: 0;
+	margin-top: 2rem;
+	padding: 2rem;
+	border-bottom: 0.05rem solid black;
+}
+
+a {
+	color: #eb5160;
+}
+
+a:hover, a:active, a:focus {
+	color: #5e383a;
+}
+
+p {
+	max-width: 70rem;
+	font-size: 0.9rem;
+}
+
+h1 {
+	color: #5e383a;
+}
+
+h2 {
+	color: #a26769;
+}
+
+h4 {
+	color: #eb5160;
+}
+
+.code-block {
+	display: block;
+	background-color: #CCCCCC;
+	padding: 1rem;
+}
+
+.main-nav-bar {
+	box-sizing: border-box;
+	background-color: black;
+	padding: 2rem;
+}
+
+.box {
+	display: inline-block;
+	width: 5rem;
+	height: 5rem;
+}
+
+.beige {
+	background-color: #fbf3ec;
+	border-style: solid;
+	border-color: #535353;
+	border-width: 0.05rem;
+}
+
+.mauve {
+	background-color: #a26769;
+}
+
+.dark-mauve {
+	background-color: #5e383a;
+}
+
+.black {
+	background-color: #071013;
+}
+
+.pink {
+	background-color: #eb5160;
+}
+
+.grid-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.grid-box {
+	flex-basis: 100%;
+	flex: 1;
+	height: 14rem;
+	margin: 0.25rem;
+	background-color: #a26769; 
+}
+
+#logo {
+	float: left;
+	padding-top: 0.8rem;
+	padding-left: 2rem;
+	font-size: 3rem;
+	text-align: center;
+	color: white;
+}
+
+#horizontal-nav-bar {
+	background-color: #a26769;
+	list-style-type: none;
+ 	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+}
+
+.nav-bar-item {
+  display: block;
+  float: right;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar-item:hover, .nav-bar-item:active, .nav-bar-item:focus {
+	background-color: #5e383a;
+	transition: background-color 0.5s ease-in;
+	color: #eb5160;
+}
+
+.product-info {
+	float: right;
+	margin: 4rem;
+}
+
+.add-to-cart-button {
+	float: right;
+	border: none;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	background-color: #a26769;
+	color: white;
+	border-radius: 2rem;
+}
+
+.add-to-cart-button:hover {
+	background-color: #5e383a;
+}
+
+.your-shopping-cart {
+	overflow: auto; /*From W3Schools*/
+	max-height: 30rem;
+	width: 40rem;
+}
+
+.item-listing {
+	display: block;
+	margin: 1rem;
+}
+
+.cart-info {
+	margin: 0rem 3rem;
+}
+
+.check-out-button {
+	float: right;
+	border: none;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	background-color: #a26769;
+	color: white;
+	border-radius: 2rem
+}
+
+.check-out-button:hover, .check-out-button:active, .check-out-button:focus {
+	background-color: #5e383a;
+}
