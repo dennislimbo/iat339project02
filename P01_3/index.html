@@ -13,9 +13,8 @@
 <body>
 	<nav>
 		<a href="index.html">Styleguide</a>
-		<a href="finalwireframes.html">Final Wireframes</a>
-		<a href="layouttemplate.html">Layout Templates</a>
-		<a href="citations.html">Citations</a>
+		<a href="sitemap.html">Site Map</a>
+		<a href="finalwireframes.html">Wireframes</a>
 	</nav>
 
 		<h1>HEADING 1.</h1>
@@ -99,13 +98,12 @@
 		<h4>Submit</h4>
 		<!--Code referenced from HTML Tutorial by Paul Brokenshire-->
 
-		<input type="submit" value="Submit">
+		<input type="submit" value="Submit" class="submit-button">
 
 		<h4>SAMPLE CODE:</h4>
 		<code class="code-block">
 			&lt;input type="submit" value="Submit"&gt;
 		</code>
-
 	</section> <!--End of Interactive Elements Section-->
 
 	<h4>5. Navigation Bar</h4>
@@ -113,23 +111,25 @@
 		<!-- add class to add specificity -->
 		<!-- Used W3Schools tutorial -->
 		<ul id="horizontal-nav-bar">
-			<li><a href="#" class="nav-bar-item">Collections</a></li>
-			<li><a href="#" class="nav-bar-item">Shop</a></li>
-			<li><a href="#" class="nav-bar-item">New Arrivals</a></li>
-			<li><a href="#" class="nav-bar-item">About Us</a></li>
-			<li><a href="#" class="nav-bar-item">Home</a></li>
-			<li id="logo">ASTRUS</li>
+			<li><a href="#" class="nav-bar-item">faq</a></li>
+			<li><a href="#" class="nav-bar-item">gallery</a></li>
+			<li><a href="#" class="nav-bar-item">services</a></li>
+			<li><a href="#" class="nav-bar-item">shop</a></li>
+			<li><a href="#" class="nav-bar-item">about</a></li>
+			<li><a href="#" class="nav-bar-item">home</a></li>
+			<li id="logo">zen keebs</li>
 		</ul>
 
 		<h4>SAMPLE CODE:</h4>
 		<code class="code-block">
 			&lt;ul id="horizontal-nav-bar"&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;Collections&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;New Arrivals&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;About Us&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li id="logo"&gt;ASTRUS&lt;/li&gt;<br>
+				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;faq&lt;/a&gt;&lt;/li&gt;<br>
+				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;gallery&lt;/a&gt;&lt;/li&gt;<br>
+				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;services&lt;/a&gt;&lt;/li&gt;<br>
+				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;shop&lt;/a&gt;&lt;/li&gt;<br>
+				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;about&lt;/a&gt;&lt;/li&gt;<br>
+				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;home&lt;/a&gt;&lt;/li&gt;<br>
+				&lt;li id="logo"&gt;zen keebs&lt;/li&gt;<br>
 			&lt;/ul&gt;
 		</code>
 	</section> <!-- End of Main Nav Bar Section -->
@@ -157,16 +157,33 @@
 	<h4>7. Product Module</h4>
 	<section id="product-module">
 		<div class="grid-container">
-			<div class="hoodie-image">
-				<img src="img/clothing_image.png" alt="Woman in a cropped pink hoodie">
+			<div class="keyboard-image">
+				<img src="img/keyboard_2.jpg" alt="Pink/Lavender/White keyboard">
 			</div>
 			<div class="product-info">
-				<h2>Cropped Pink Hoodie</h2>
-				<h3>$50</h3>
-				<p>Made from super soft cotton material with screen printed lettering on the front. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis sed arcu vitae semper. Vestibulum ullamcorper turpis rutrum luctus fringilla. Cras id sem et augue scelerisque suscipit nec sed dolor. Phasellus nec nulla tincidunt, porta quam a, aliquam nulla.</p>
-				<button class="add-to-cart-button">Add to Cart</button>
+				<h3>fully assembled keyboards</h3>
+				<h2>Pink & Lavender Mechanical Keyboard</h2>
+				<h4>$50</h4>
+				<p>Super dope keyboard. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis sed arcu vitae semper. Vestibulum ullamcorper turpis rutrum luctus fringilla. Cras id sem et augue scelerisque suscipit nec sed dolor. Phasellus nec nulla tincidunt, porta quam a, aliquam nulla.</p>
+				<button class="add-to-cart-button">add to cart</button>
 			</div>
 		</div>
+
+		<h4>SAMPLE CODE:</h4>
+		<code class="code-block">
+			&lt;div class=&quot;grid-container&quot;&gt;<br>
+			&lt;div class=&quot;keyboard-image&quot;&gt;<br>
+			&lt;img src=&quot;img/keyboard_2.jpg&quot; alt=&quot;Pink/Lavender/White keyboard&quot;&gt;<br>
+			&lt;/div&gt;<br>
+			&lt;div class=&quot;product-info&quot;&gt;<br>
+			&lt;h3&gt;fully assembled keyboards&lt;/h3&gt;<br>
+			&lt;h2&gt;Pink &amp; Lavender Mechanical Keyboard&lt;/h2&gt;<br>
+			&lt;h4&gt;$50&lt;/h4&gt;<br>
+			&lt;p&gt;Super dope keyboard. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis sed arcu vitae semper. Vestibulum ullamcorper turpis rutrum luctus fringilla. Cras id sem et augue scelerisque suscipit nec sed dolor. Phasellus nec nulla tincidunt, porta quam a, aliquam nulla.&lt;/p&gt;<br>
+			&lt;button class=&quot;add-to-cart-button&quot;&gt;add to cart&lt;/button&gt;<br>
+			&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</code>
 	</section>
 
 	<h4>8. Other Modules</h4>
@@ -174,33 +191,64 @@
 		<h2>Your Shopping Cart</h2>
 		<div class="grid-container">
 			<div class="your-shopping-cart">
-				<img src="img/cart_image.png" class="item-listing" alt="Product Image 1">
+				<img src="img/cart_keyboard.jpg" class="item-listing" alt="Product Image 1">
 				<h3>$50</h3>
-				<img src="img/cart_image.png" class="item-listing" alt="Product Image 2">
+				<img src="img/cart_keyboard.jpg" class="item-listing" alt="Product Image 2">
 				<h3>$50</h3>
-				<img src="img/cart_image.png" class="item-listing" alt="Product Image 3">
+				<img src="img/cart_keyboard.jpg" class="item-listing" alt="Product Image 3">
 				<h3>$50</h3>
 			</div>
 
 			<div class="cart-info">
 				<h2>Summary</h2>
-				<h3>Subtotal:</h3>
-				<h3>Taxes:</h3>
-				<h3>Total: $200</h3>
-				<button class="check-out-button">Check Out</button>
+				<h4>Subtotal:</h4>
+				<h4>Taxes:</h4>
+				<h4>Total: $200</h4>
+				<button class="check-out-button">check out</button>
 			</div>
 		</div>
+
+		<h4>SAMPLE CODE</h4>
+		<code class="code-block">
+			&lt;h2&gt;Your Shopping Cart&lt;/h2&gt;<br>
+			&lt;div class=&quot;grid-container&quot;&gt;<br>
+			&lt;div class=&quot;your-shopping-cart&quot;&gt;<br>
+			&lt;img src=&quot;img/cart_keyboard.jpg&quot; class=&quot;item-listing&quot; alt=&quot;Product Image 1&quot;&gt;<br>
+			&lt;h3&gt;$50&lt;/h3&gt;<br>
+			&lt;img src=&quot;img/cart_keyboard.jpg&quot; class=&quot;item-listing&quot; alt=&quot;Product Image 2&quot;&gt;<br>
+			&lt;h3&gt;$50&lt;/h3&gt;<br>&lt;img src=&quot;img/cart_keyboard.jpg&quot; class=&quot;item-listing&quot; alt=&quot;Product Image 3&quot;&gt;<br>
+			&lt;h3&gt;$50&lt;/h3&gt;<br>
+			&lt;/div&gt;<br>
+			&lt;div class=&quot;cart-info&quot;&gt;<br>
+			&lt;h2&gt;Summary&lt;/h2&gt;<br>
+			&lt;h4&gt;Subtotal:&lt;/h4&gt;<br>
+			&lt;h4&gt;Taxes:&lt;/h4&gt;<br>
+			&lt;h4&gt;Total: $200&lt;/h4&gt;<br>
+			&lt;button class=&quot;check-out-button&quot;&gt;check out&lt;/button&gt;<br>
+			&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</code>
 	</section>
 
 	<h4>9. Color Swatches</h4>
 	<section id="color-palette">
-		<div class="box beige"></div>
-		<div class="box mauve"></div>
-		<div class="box dark-mauve"></div>
-		<div class="box black"></div>
-		<div class="box pink"></div>
+		<h2>Swatches:</h2>
+		<div class="box swatch-one"></div>
+		<div class="box swatch-two"></div>
+		<div class="box swatch-three"></div>
+		<div class="box swatch-four"></div>
+		<div class="box swatch-five"></div>
+		<div class="box swatch-six"></div>
 
-
+		<h4>SAMPLE CODE:</h4>
+		<code class="code-block">
+			&lt;div class=&quot;box swatch-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;box swatch-two&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;box swatch-three&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;box swatch-four&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;box swatch-five&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;box swatch-six&quot;&gt;&lt;/div&gt;
+		</code>
 	</section>
 </body>
 </html>

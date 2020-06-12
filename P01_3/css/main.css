@@ -1,7 +1,7 @@
 html {
 	font-family: 'Montserrat', sans-serif;
 	margin: 1rem;
-	background-color: #fbf3ec;
+	background-color: #F4FAEE;
 	color: #071013;
 }
 
@@ -13,11 +13,12 @@ section {
 }
 
 a {
-	color: #eb5160;
+	color: #709775;
 }
 
 a:hover, a:active, a:focus {
-	color: #5e383a;
+	background-color: #709775;
+	color: #FFFFFF;
 }
 
 p {
@@ -26,15 +27,23 @@ p {
 }
 
 h1 {
-	color: #5e383a;
+	color: #1A281F;
+	font-size: 1.5rem;
 }
 
 h2 {
-	color: #a26769;
+	color: #345F39;
+	font-size: 1.3rem;
+}
+
+h3 {
+	color: #709775;
+	font-weight: 400;
+	font-size: 0.9rem;
 }
 
 h4 {
-	color: #eb5160;
+	color: #1A281F;
 }
 
 .code-block {
@@ -55,27 +64,41 @@ h4 {
 	height: 5rem;
 }
 
-.beige {
-	background-color: #fbf3ec;
+.submit-button {
+	border: none;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 1rem 2.5rem;
+	background-color: #709775;
+	color: white;
+	border-radius: 2rem
+}
+
+.swatch-one {
+	background-color: #FFFFFF;
 	border-style: solid;
 	border-color: #535353;
 	border-width: 0.05rem;
 }
 
-.mauve {
-	background-color: #a26769;
+.swatch-two {
+	background-color: #C4D4C6;
 }
 
-.dark-mauve {
-	background-color: #5e383a;
+.swatch-three {
+	background-color: #709775;
 }
 
-.black {
-	background-color: #071013;
+.swatch-four {
+	background-color: #345F39;
 }
 
-.pink {
-	background-color: #eb5160;
+.swatch-five {
+	background-color: #1A281F;
+}
+
+.swatch-six {
+	background-color: #5EC16B;
 }
 
 .grid-container {
@@ -88,20 +111,21 @@ h4 {
 	flex: 1;
 	height: 14rem;
 	margin: 0.25rem;
-	background-color: #a26769; 
+	background-color: #709775; 
 }
 
 #logo {
 	float: left;
-	padding-top: 0.8rem;
+	padding-top: 1.5rem;
 	padding-left: 2rem;
-	font-size: 3rem;
+	font-size: 2rem;
+	font-weight: 600;
 	text-align: center;
 	color: white;
 }
 
 #horizontal-nav-bar {
-	background-color: #a26769;
+	background-color: #709775;
 	list-style-type: none;
  	margin: 0;
   	padding: 0;
@@ -114,38 +138,43 @@ h4 {
   padding: 2rem;
   text-align: center;
   text-decoration: none;
+  font-weight: 600;
+  border-bottom: 0.25rem solid transparent;
   color: white;
 }
 
 .nav-bar-item:hover, .nav-bar-item:active, .nav-bar-item:focus {
-	background-color: #5e383a;
-	transition: background-color 0.5s ease-in;
-	color: #eb5160;
+	border-bottom: 0.25rem solid #345F39;
+	color: white;
 }
 
 .product-info {
 	float: right;
 	margin: 4rem;
+	margin-top: 0rem;
+	max-width: 40rem;
 }
 
 .add-to-cart-button {
 	float: right;
 	border: none;
 	text-decoration: none;
-	padding: 1rem 1.5rem;
-	background-color: #a26769;
+	font-weight: 600;
+	padding: 0.85rem 3rem;
+	background-color: #709775;
 	color: white;
 	border-radius: 2rem;
 }
 
-.add-to-cart-button:hover {
-	background-color: #5e383a;
+.add-to-cart-button:hover, .add-to-cart-button:active, .add-to-cart-button:focus {
+	background-color: #345F39;
 }
 
 .your-shopping-cart {
 	overflow: auto; /*From W3Schools*/
 	max-height: 30rem;
 	width: 40rem;
+	background-color: #FFFFFF;
 }
 
 .item-listing {
@@ -161,12 +190,13 @@ h4 {
 	float: right;
 	border: none;
 	text-decoration: none;
-	padding: 1rem 1.5rem;
-	background-color: #a26769;
+	font-weight: 600;
+	padding: 1rem 2.5rem;
+	background-color: #709775;
 	color: white;
 	border-radius: 2rem
 }
 
 .check-out-button:hover, .check-out-button:active, .check-out-button:focus {
-	background-color: #5e383a;
+	background-color: #345F39;
 }
