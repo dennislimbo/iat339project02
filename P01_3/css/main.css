@@ -45,6 +45,21 @@ h3 {
 h4 {
 	color: #1A281F;
 }
+/* Dennis added this styling to tackle the validation issue */
+
+.bold-subheader {
+	color: #1A281F;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.thin {
+	color: #709775;
+	font-size: 1rem;
+	font-weight: lighter;
+}
+
+/* Code that Rachel had originally*/
 
 .code-block {
 	display: block;
