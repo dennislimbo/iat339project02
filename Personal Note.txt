@@ -1,0 +1,7 @@
+Content for two versions
+
+For putting stuff in cart, just link to a page that has an indicator up top
+
+Click through the site, don't need the backend for this project.
+
+Button on the homepage?
