@@ -1,0 +1,53 @@
+
+.col-one {
+    flex: 1 1 auto;
+}
+
+.col-two {
+    flex: 2 2 auto;
+}
+
+.col-three {
+    flex: 3 3 auto;
+}
+
+.product-listings .sub-container {
+    margin-left: 4.75em;
+}
+
+@media screen and (min-width: 375px) {
+    .cart-container, .container, .product-listings .sub-container {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: -webkit-flex;
+        flex-wrap: -ms-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .cart-container .col-two {
+        margin-right: 10em;
+    }
+
+    .shipping-information .vertical-order-summary {
+        margin-right: 15em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cart-container, .container, .product-listings .sub-container {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: -webkit-flex;
+        flex-wrap: -ms-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .cart-container .col-two {
+        margin-right: 1.4em;
+    }
+
+}

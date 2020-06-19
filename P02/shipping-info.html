@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Zen Keebs - Shipping Information</title>
+
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome/css/all.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<!-- Wayfinding/Breadcrumb-->
+		<div class="wayfinding">
+			<a class="wayfinding-item home" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Home</a>
+			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Cart</a>
+			<a class="wayfinding-item current" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Address Info</a>
+			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Shipping Method</a>
+			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Payment</a>
+		</div>
+		<!-- Main Content -->
+		<section class="container shipping-information">
+			<!-- Shipping Billing Module-->
+			<section class="shipping-billing col-one">
+				<div class="shipping-billing-form">
+					<h1 class="normal">zen keebs</h1>
+					<form action="#">
+						<h2 class="normal">Shipping Address</h2>
+						<div class="inline-form">
+							<label for="first-name">First Name</label>
+							<input type="text" name="first-name" id="first-name">
+						</div>
+						<div class="inline-form">
+							<label for="last-name">Last Name</label>
+							<input type="text" name="first-name" id="first-name">
+						</div>
+						<div class="block-form">
+							<label for="email">E-mail</label>
+							<input type="text" name="email" id="email">
+						</div>
+						<div class="block-form">
+							<label for="phone">Phone Number</label>
+							<input type="text" name="phone" id="phone">
+						</div>
+						<div class="block-form">
+							<label for="address">Street Address</label>
+							<input type="text" name="address" id="address">
+						</div>
+						<div class="block-form">
+							<label for="address-two">Address Line 2</label>
+							<input type="text" name="address-two" id="address-two">
+						</div>
+						<div class="inline-form">
+							<label for="city">City</label>
+							<input type="text" name="city" id="city">
+						</div>
+						<div class="inline-form">
+							<label for="state-province">State / Province</label>
+							<input type="text" name="state-province" id="state-province">
+						</div>
+						<br>
+						<div class="inline-form">
+							<label for="country">Country</label>
+							<input list="countries" name="country" id="country">
+							<datalist id="countries">
+								<option value="Canada">Canada</option>
+								<option value="United States">United States</option>
+								<option value="Russia">Russia</option>
+								<option value="China">China</option>
+							</datalist>
+						</div>
+						<div class="inline-form">
+							<label for="zip-postal">Zip Number / Postal Code</label>
+							<input type="text" name="zip-postal" id="zip-postal">
+						</div>
+						<div>
+							<input class="address-checkbox" type="checkbox" name="same" id="same" value="same">
+							<label class="address-checkbox"for="same">Billing address the same as shipping</label>
+						</div>
+						<h2 class="normal">Billing Address</h2>
+						<div class="inline-form">
+							<label for="first-name">First Name</label>
+							<input type="text" name="first-name" id="first-name">
+						</div>
+						<div class="inline-form">
+							<label for="last-name">Last Name</label>
+							<input type="text" name="first-name" id="first-name">
+						</div>
+						<div class="block-form">
+							<label for="email">E-mail</label>
+							<input type="text" name="email" id="email">
+						</div>
+						<div class="block-form">
+							<label for="phone">Phone Number</label>
+							<input type="text" name="phone" id="phone">
+						</div>
+						<div class="block-form">
+							<label for="address">Street Address</label>
+							<input type="text" name="address" id="address">
+						</div>
+						<div class="block-form">
+							<label for="address-two">Address Line 2</label>
+							<input type="text" name="address-two" id="address-two">
+						</div>
+						<div class="inline-form">
+							<label for="city">City</label>
+							<input type="text" name="city" id="city">
+						</div>
+						<div class="inline-form">
+							<label for="state-province">State / Province</label>
+							<input type="text" name="state-province" id="state-province">
+						</div>
+						<br>
+						<div class="inline-form">
+							<label for="country">Country</label>
+							<input list="countries" name="country" id="country">
+							<datalist id="countries">
+								<option value="Canada">Canada</option>
+								<option value="United States">United States</option>
+								<option value="Russia">Russia</option>
+								<option value="China">China</option>
+							</datalist>
+						</div>
+						<div class="inline-form">
+							<label for="zip-postal">Zip Number / Postal Code</label>
+							<input type="text" name="zip-postal" id="zip-postal">
+						</div>
+						<div class="submission">
+							<a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Return to Cart</a>
+							<button class="shipping-billing-form-btn" type="submit">Continue to Shipping Method</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- Vertical Order Summary Module -->
+			<section class="vertical-order-summary col-one">
+				<div class="cart-item">
+					<div class="cart-image-placeholder"></div>
+					<h2 class="normal item-name">Item 1</h2>
+					<p class="price">$20.00</p>
+					<a class="modify" href="#">Modify</a>
+					<i class="fas fa-grip-lines-vertical"></i>
+					<a class="remove" href="#">Remove</a>
+				</div>
+				<div class="cart-item">
+					<div class="cart-image-placeholder"></div>
+					<h2 class="normal item-name">Item 2</h2>
+					<p class="price">$20.00</p>
+					<a class="modify" href="#">Modify</a>
+					<i class="fas fa-grip-lines-vertical"></i>
+					<a class="remove" href="#">Remove</a>
+				</div>
+				<div class="cart-item">
+					<div class="cart-image-placeholder"></div>
+					<h2 class="normal item-name">Item 3</h2>
+					<p class="price">$20.00</p>
+					<a class="modify" href="#">Modify</a>
+					<i class="fas fa-grip-lines-vertical"></i>
+					<a class="remove" href="#">Remove</a>
+				</div>
+				<h2 class="medium">Summary</h2>
+				<div class="order-price-summary">
+					<p class="subtotal-price">$60.00</p>
+					<h3 class="medium subtotal">Subtotal</h3>
+					<p class="est-shipping-price">$15.00</p>
+					<h3 class="medium est-shipping">Estimated Shipping & Handling</h3>
+					<p class="taxes-price">$0.00</p>
+					<h3 class="medium taxes">Taxes</h3>
+					<p class="total-price">$75.00</p>
+					<div class="total">
+						<h3 class="medium" id="myTotal">Total</h3>
+					</div>
+				</div>
+			</section>
+		</section>
+
+	</body>
+</html>

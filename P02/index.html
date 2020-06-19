@@ -8,41 +8,53 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome/css/all.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
 	<body>
-		<!-- Nav Bar Section-->
-		<nav>
-			<ul class="menu">
-				<li class="logo"><a href="#">zen keebs</a></li>
-				<li class="item"><a href="#">home</a></li>
-				<li class="item"><a href="#">about</a></li>
-				<li class="item has-submenu">
-					<a tabindex="0">shop</a>
-					<ul class="submenu">
-						<li class="subitem"><a href="#">all products</a></li>
-						<li class="subitem"><a href="#">new arrivals</a></li>
-						<li class="subitem"><a href="#">keyboards</a></li>
-						<li class="subitem"><a href="#">accessories</a></li>
-						<li class="subitem"><a href="#">plates</a></li>
-						<li class="subitem"><a href="#">switches</a></li> <!-- Might have another dropdown menu here, need to doublecheck with Rachel -->
-						<li class="subitem"><a href="#">keycaps</a></li>
-					</ul>
-				</li>
-				<li class="item"><a href="#">services</a></li>
-				<li class="search">
-					<form action="#">
-						<input type="text" name="Search.." name="search">
-						<input class="nav-button" type="button" value="#">
-					</form>
-				</li>
-				<li class="item"> <!-- Insert Account and Cart Icons-->
-					<a class="button" href="#">A</a>
-					<a class="button" href="#">B</a>
-				</li>
-				<li class="toggle"><a href="#">burger</a></li>
-			</ul>
+		<!-- Old Nav Bar Section-->
+
+
+		<!-- New Nav Bar Section W3C -->
+		<nav class="navigation" id="myNav">
+			<a href="#" class="logo">zen keebs</a>
+			<a href="#" class="active">home</a>
+			<a href="#">about</a>
+			<div class="dropdown">
+				<button class="dropbtn">shop
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">all products</a>
+					<a href="#">new arrivals</a>
+					<a href="#">keyboards</a>
+					<a href="#">accessories</a>
+					<a href="#">plates</a>
+					<a href="#">switches</a>
+					<a href="#">keycaps</a>
+				</div>
+			</div>
+			<a href="#">services</a>
+			<form class="search"action="#">
+				<label for="search"><i class="fas fa-search"></i></label>
+				<input class="textfield" type="text" name="Search.." name="search" value="Search">
+				<input class="nav-button" type="button" value="Search">
+			</form>
+			<a class="button" href="#"><i class="far fa-user-circle"></i></a>
+			<a class="button" href="#"><i class="fas fa-shopping-cart"></i> </a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 		</nav>
 
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myNav");
+			  if (x.className === "navigation" || x.className ==="search") {
+				x.className += " responsive";
+			  } else {
+				x.className = "navigation";
+			  }
+			}
+		</script>
 	</body>
 </html>
