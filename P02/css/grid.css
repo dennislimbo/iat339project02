@@ -9,7 +9,6 @@
 .about-body-container {
     display: flex;
     justify-content: center;
-    align-items: top;
 }
 
 /* DETAILED PRODUCT SECTION */
@@ -25,9 +24,10 @@
 
 /* SERVICES SECTION */
 .services-body-container {
+	flex-shrink: 1 1 auto;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 .services-body-item {
@@ -55,6 +55,7 @@
 	display: inline-block;
     vertical-align: top;
 }
+
 .col-one {
     flex: 1 1 auto;
 }
