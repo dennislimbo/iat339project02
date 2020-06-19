@@ -845,6 +845,85 @@ nav .nav-button {
     background-color: #345F39;
 }
 
+/* Order Confirmation */
+
+.order-confirmation-module {
+    background: #C4D4C6;
+    margin: 0 10em;
+    padding: 0 8.5625em;
+    padding-bottom: 4em;
+}
+
+.order-confirmation-module h1 {
+    font-size: 3em;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 1.25em;
+    padding-top: 3em;
+}
+
+.order-confirmation-module .shopper-info {
+    margin-bottom: 2.4375em;
+}
+
+.order-confirmation-module .shopper-info p {
+    margin: .3em 0;
+}
+
+.order-confirmation-module .order-info {
+    margin-bottom: 1.5em;
+}
+
+.order-confirmation-module .order-info * {
+    margin-bottom: 1em;
+}
+
+.order-confirmation-module .order-item {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.order-confirmation-module .item-name, .order-confirmation-module .item-details, .order-confirmation-module .order-image-placeholder {
+    position: relative;
+}
+
+.order-confirmation-module .order-image-placeholder {
+    left: 0px;
+    width: 128px;
+    height: 128px;
+    background: #979797;
+}
+
+.order-confirmation-module .item-name {
+    top: -128px;
+    left: 152px;
+}
+
+.order-confirmation-module .item-details {
+    top: -64px;
+    left: 152px;
+}
+
+.order-confirmation-module .return-button {
+    float: right;
+    color: #494949;
+    font-size: 2em;
+}
+
+.order-confirmation-module .return-button a {
+    text-decoration: none;
+    color: #494949;
+}
+
+.order-confirmation-module .return-button:hover,
+.order-confirmation-module .return-button a:hover, 
+.order-confirmation-module .return-button:focus,
+.order-confirmation-module .return-button a:focus,
+.order-confirmation-module .return-button a:active,
+.order-confirmation-module .return-button:active {
+    color: #1A281F;
+}
+
 /* HOME SECTION */
 .home-hero-image {
     display: flex;
