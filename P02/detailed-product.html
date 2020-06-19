@@ -14,10 +14,54 @@
 	</head>
 
 	<body>
-		<nav>
+		<!-- New Nav Bar Section W3C -->
+		<nav class="navigation" id="myNav">
+			<a href="#" class="logo">zen keebs</a>
+			<a href="#" class="active">home</a>
+			<a href="#">about</a>
+			<div class="dropdown">
+				<button class="dropbtn">shop
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">all products</a>
+					<a href="#">new arrivals</a>
+					<a href="#">keyboards</a>
+					<a href="#">accessories</a>
+					<a href="#">plates</a>
+					<a href="#">switches</a>
+					<a href="#">keycaps</a>
+				</div>
+			</div>
+			<a href="#">services</a>
+			<form class="search"action="#">
+				<label for="search"><i class="fas fa-search"></i></label>
+				<input class="textfield" type="text" name="Search.." name="search" value="Search">
+				<input class="nav-button" type="button" value="Search">
+			</form>
+			<a class="button" href="#"><i class="far fa-user-circle"></i></a>
+			<a class="button" href="#"><i class="fas fa-shopping-cart"></i> </a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 		</nav>
-
-		<!-- Add Wayfinding Here -->
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myNav");
+			  if (x.className === "navigation" || x.className ==="search") {
+				x.className += " responsive";
+			  } else {
+				x.className = "navigation";
+			  }
+			}
+		</script>
+		
+		<!--  Wayfinding-->
+		<div class="wayfinding">
+			<a class="wayfinding-item home" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Home</a>
+			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Cart</a>
+			<a class="wayfinding-item current" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Address Info</a>
+			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Shipping Method</a>
+			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Payment</a>
+		</div>
 
 		<div class="detailed-product-container">
 			<div class="detailed-product-image">
