@@ -25,7 +25,6 @@
 
 /* SERVICES SECTION */
 .services-body-container {
-	flex-shrink: 1 1 auto;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;

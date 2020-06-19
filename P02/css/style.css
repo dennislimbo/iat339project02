@@ -871,8 +871,11 @@ nav .nav-button {
 /* ABOUT SECTION */
 .about-body-content {
     max-width: 50rem;
+    background-color: #709775;
+    margin-top: -3rem;
     padding: 2rem;
     margin-bottom: 3rem;
+
 }
 
 /*DETAILED PRODUCT SECTION */
