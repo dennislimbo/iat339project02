@@ -2,21 +2,29 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<title>Zen Keebs</title>
 
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="font-awesome/css/all.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+		<!-- Montserrat Font Reference
+			Light = 0,300
+			Light Italic = 1,300
+			Regular = 400
+			Regular Italic = 1,400
+			Bold = 700
+			Semibold = 600 (Buttons)
+			Bold Italic = 1,700 -->
+
 	</head>
 
 	<body>
-		<!-- Old Nav Bar Section-->
-
-
-		<!-- New Nav Bar Section W3C -->
+		<!-- Nav Bar Section-->
 		<nav class="navigation" id="myNav">
 			<a href="#" class="logo">zen keebs</a>
 			<a href="#" class="active">home</a>
@@ -24,18 +32,18 @@
 			<div class="dropdown">
 				<button class="dropbtn">shop
 					<i class="fa fa-caret-down"></i>
-				</button>
 				<div class="dropdown-content">
-					<a href="#">all products</a>
+				</button>
 					<a href="#">new arrivals</a>
+					<a href="#">all products</a>
 					<a href="#">keyboards</a>
 					<a href="#">accessories</a>
 					<a href="#">plates</a>
 					<a href="#">switches</a>
 					<a href="#">keycaps</a>
 				</div>
-			</div>
 			<a href="#">services</a>
+			</div>
 			<form class="search"action="#">
 				<label for="search"><i class="fas fa-search"></i></label>
 				<input class="textfield" type="text" name="Search.." name="search" value="Search">
@@ -47,14 +55,82 @@
 		</nav>
 
 		<script>
-			function myFunction() {
 			  var x = document.getElementById("myNav");
+			function myFunction() {
 			  if (x.className === "navigation" || x.className ==="search") {
-				x.className += " responsive";
 			  } else {
-				x.className = "navigation";
-			  }
 			}
 		</script>
+				x.className += " responsive";
+			  }
+				x.className = "navigation";
+		<div class="home-hero-image">
+			<!-- General Size of 1600 x 500-->
+			<img src="img/hero_image_resized.png" alt="Keyboard banner image">
+		</div>
+
+		<div class="home-body-container">
+			<div class="home-body-item">
+				<h1 class="page-header">Welcome to ZenKeebs</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod suscipit libero, in venenatis augue porta et. Integer vel risus sem. Aliquam convallis erat et magna fringilla, et suscipit nibh vestibulum. Aliquam ut condimentum tellus, in hendrerit risus. Proin orci nisi, sagittis eu nulla quis, sollicitudin elementum odio. Nam id justo tellus. Morbi dignissim dolor eu feugiat egestas. Morbi scelerisque aliquet nisl vel auctor. Ut molestie neque neque, quis euismod dui finibus eu. Ut fermentum enim ac malesuada euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+				Maecenas dapibus nunc erat, vel imperdiet nunc cursus id. Cras pretium, lorem rhoncus pharetra vehicula, lectus leo vehicula leo, nec luctus enim leo et est. Curabitur sit amet pretium dolor, eu iaculis ante. Cras sed elit tortor. Nulla aliquam imperdiet sollicitudin. In laoreet metus purus, in pretium tortor hendrerit id. Sed a dolor ipsum. Suspendisse consectetur a neque in hendrerit. Pellentesque lorem nulla, blandit sed ipsum et, iaculis vehicula orci. Curabitur posuere ultricies leo.
+				</p>
+			</div>
+		</div>
+
+		<footer> <!-- Start of Footer -->
+			<div class="footer-container">
+				<div class="footer-box col-one">
+					<p>zenkeebs</p>
+				</div>
+				<div class="footer-box col-two">
+
+					<ul class="footer-menu">
+						<li class="footer-header">shop</p>
+						<li><a href="" class="footer-menu-item">category</a></li>
+						<li><a href="" class="footer-menu-item">category</a></li>
+						<li><a href="" class="footer-menu-item">category</a></li>
+						<li><a href="" class="footer-menu-item">category</a></li>
+						<li><a href="" class="footer-menu-item">category</a></li>
+					</ul>
+				</div>
+
+					<ul class="footer-menu">
+				<div class="footer-box col-three">
+						<li class="footer-header">menu</p>
+						<li><a href="" class="footer-menu-item">link</a></li>
+						<li><a href="" class="footer-menu-item">link</a></li>
+						<li><a href="" class="footer-menu-item">link</a></li>
+						<li><a href="" class="footer-menu-item">link</a></li>
+					</ul>
+						<li><a href="" class="footer-menu-item">link</a></li>
+
+				</div>
+				<div class="footer-box col-four">
+					<!--Email & Address-->
+					<p class="footer-header">contact</p>
+					<p class="footer-body-text">
+						email: help@zenkeebs.com
+						call: 1.800.123.1234 
+
+					</p>
+					<p class="footer-header">zen keebs</p>
+					<p class="footer-body-text">
+						1234 Fake Street
+						Surrey, BC B4K 619
+						Canada
+				</div>
+					</p>
+				<div class="footer-box col-five">
+
+					<!--Social Media Links-->
+					<p class="footer-header">social media</p>
+					<a href="#" class="social-media-icons"><i class="fab fa-2x fa-facebook"></i></a>
+					<a href="#" class="social-media-icons"><i class="fab fa-2x fa-instagram"></i></a>
+					<a href="#" class="social-media-icons"><i class="fab fa-2x fa-twitter"></i></a>
+				</div>
+		</footer> <!-- End of Footer -->
+			</div>
 	</body>
 </html>

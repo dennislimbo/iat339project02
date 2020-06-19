@@ -1,4 +1,60 @@
+/* HOME SECTION */
+.home-body-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
 
+/* ABOUT US SECTION */
+.about-body-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+/* DETAILED PRODUCT SECTION */
+.detailed-product-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.add-to-cart-button {
+	float: right;
+}
+
+/* SERVICES SECTION */
+.services-body-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.services-body-item {
+	display: flex;
+	flex-direction: row;
+}
+
+/* CONTACT US SECTION */
+.contact-us-body-container {
+	display: flex;
+	justify-content: center;
+}
+
+
+/* FOOTER SECTION */
+.footer-container {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    align-self: bottom;
+}
+
+.footer-box {
+	display: inline-block;
+    vertical-align: top;
+}
 .col-one {
     flex: 1 1 auto;
 }
