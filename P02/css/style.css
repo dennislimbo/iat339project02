@@ -64,6 +64,30 @@ nav a, .navigation form, nav .button {
     margin-right: 2em;
 }
 
+h1 {
+    text-align: center;
+    color: #1A281F;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #345F39;
+    font-size: 1.3rem;
+}
+
+h3 {
+    color: #709775;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+h4 {
+    color: #1A281F;
+}
+
+.menu, 
+.submenu {
+    list-style-type: none;
 nav a, nav .button {
     border-bottom: 0.25em solid transparent;
 }
@@ -786,6 +810,156 @@ nav .nav-button {
 .account-summary .order-price {
     left: 581.68px;
 }
+
+.item:hover {
+    border-bottom: 0.25rem solid #345F39;
+}
+
+.fab {
+    display: inline-block;
+    margin: 2rem;
+    color: #FFFFFF;
+}
+
+.button-style {
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.85rem 3rem;
+    background-color: #709775;
+    color: white;
+    border-radius: 2rem;
+}
+
+.button-style:hover, .button-style:active, .button-style:focus {
+    background-color: #345F39;
+}
+
+/* HOME SECTION */
+.home-hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.home-body-item {
+    padding: 2rem;
+    max-width: 50rem;
+    margin-bottom: 2rem;
+}
+
+
+/* ABOUT SECTION */
+.about-body-content {
+    max-width: 50rem;
+    padding: 2rem;
+}
+
+/*DETAILED PRODUCT SECTION */
+.detailed-product-container {
+    background-color: white;
+}
+
+.detailed-product-image {
+    margin: 2rem;
+}
+
+.detailed-product-description {
+    margin: 2rem;
+    max-width: 35rem;
+}
+
+.product {
+    margin-bottom: 1rem;
+}
+
+/* SERVICES SECTION */
+.page-header {
+    width: 50%;
+}
+
+.services-body-container {
+    margin: 0rem;
+    padding: 2rem;
+}
+
+.services-body-item {
+    max-width: 50rem;
+    background-color: #709775;
+    padding: 2rem;
+}
+
+.services-form-container {
+    max-width: 50rem;
+    padding: 2rem;
+}
+
+.services-assembly-info {
+    margin-bottom: 2rem;
+}
+
+.services-list {
+    list-style-type: none;
+}
+
+textarea {
+    resize: none;
+    padding: 0.5rem;
+}
+
+.services-submit-button {
+    float: right;
+}
+
+/* CONTACT US SECTION */
+input[type=text] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+input[type=text]:focus, textarea {
+    outline: 0.1rem solid #709775;
+}
+
+.contact-us-body-container {
+    margin: 3rem 0rem;
+}
+
+/*can merge these styles to reduce clutter*/
+.contact-us-submit-button {
+    float: right;
+}
+
+/* FOOTER SECTION */
+.footer-container {
+    background-color: #1A281F;
+    margin: 0;
+    padding: 2rem;
+    color: #FFFFFF;
+}
+
+.footer-header {
+    font-weight: 700;
+    color: #709775;
+}
+
+.footer-menu {
+    list-style-type: none;
+}
+
+.footer-menu-item {
+    color: #345F39;
+}
+
+.footer-menu-item:hover, .footer-menu-item:active, .footer-menu-item:focus {
+    color: #FFFFFF;
+}
+
+.footer-box {
+    padding: 2rem;
+    margin: 3rem 1rem;
+}
+
 
 .account-summary .order-item {
     position: relative;
