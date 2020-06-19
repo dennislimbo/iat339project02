@@ -2,14 +2,12 @@
 .home-body-container {
     display: flex;
     justify-content: center;
-    align-items: top;
 }
 
 /* ABOUT US SECTION */
 .about-body-container {
     display: flex;
     justify-content: center;
-    align-items: top;
 }
 
 /* DETAILED PRODUCT SECTION */
@@ -47,8 +45,6 @@
 	display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: top;
-    align-self: bottom;
 }
 
 .footer-box {
