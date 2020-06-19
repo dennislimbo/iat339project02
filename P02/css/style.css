@@ -5,7 +5,8 @@
 }
 
 html {
-    background-color: #F4FAEE;
+    /*background-color: #F4FAEE;*/
+    background-color: #FFFFFF;
 	color: #071013;
 }
 
@@ -45,7 +46,7 @@ body {
     padding-right: .25em;
     box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.25);
 }
-/* New Nav Stling*/
+/* New Nav Styling*/
 
 nav {
     background-color: #709775;
@@ -405,7 +406,7 @@ nav .nav-button {
         font-size: 1.5em;
     }
 
-        /* Carts Items */
+    /* Carts Items */
 
     .cart-image-placeholder {
         width: 97px;
@@ -599,6 +600,7 @@ nav .nav-button {
     height: 233px;
     background: #C4C4C4;
 }
+
 @media screen and (max-width: 375px) {
     .product-listings h1 {
         text-align: center;
@@ -845,8 +847,16 @@ nav .nav-button {
 
 /* HOME SECTION */
 .home-hero-image {
-    width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.home-hero-image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 
 .home-body-item {
@@ -855,11 +865,14 @@ nav .nav-button {
     margin-bottom: 2rem;
 }
 
-
+.hero-image {
+    object-fit: cover;
+}
 /* ABOUT SECTION */
 .about-body-content {
     max-width: 50rem;
     padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 /*DETAILED PRODUCT SECTION */
@@ -880,10 +893,13 @@ nav .nav-button {
     margin-bottom: 1rem;
 }
 
-/* SERVICES SECTION */
-.page-header {
-    width: 50%;
+.collapsible-content {
+    /*W3 Schools*/
+    display: none;
+    overflow: hidden;
 }
+
+/* SERVICES SECTION */
 
 .services-body-container {
     margin: 0rem;

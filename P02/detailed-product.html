@@ -16,16 +16,16 @@
 	<body>
 		<!-- New Nav Bar Section W3C -->
 		<nav class="navigation" id="myNav">
-			<a href="#" class="logo">zen keebs</a>
-			<a href="#" class="active">home</a>
-			<a href="#">about</a>
+			<a href="index.html" class="logo">zen keebs</a>
+			<a href="index.html" class="active">home</a>
+			<a href="about-us.html">about</a>
 			<div class="dropdown">
 				<button class="dropbtn">shop
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
 					<a href="#">all products</a>
-					<a href="#">new arrivals</a>
+					<a href="product-listings.html">new arrivals</a>
 					<a href="#">keyboards</a>
 					<a href="#">accessories</a>
 					<a href="#">plates</a>
@@ -33,14 +33,14 @@
 					<a href="#">keycaps</a>
 				</div>
 			</div>
-			<a href="#">services</a>
+			<a href="services.html">services</a>
 			<form class="search"action="#">
 				<label for="search"><i class="fas fa-search"></i></label>
 				<input class="textfield" type="text" name="Search.." name="search" value="Search">
 				<input class="nav-button" type="button" value="Search">
 			</form>
-			<a class="button" href="#"><i class="far fa-user-circle"></i></a>
-			<a class="button" href="#"><i class="fas fa-shopping-cart"></i> </a>
+			<a class="button" href="account.html"><i class="far fa-user-circle"></i></a>
+			<a class="button" href="cart.html"><i class="fas fa-shopping-cart"></i> </a>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 		</nav>
 		<script>
@@ -52,15 +52,14 @@
 				x.className = "navigation";
 			  }
 			}
-		</script>
+        </script>
 		
 		<!--  Wayfinding-->
 		<div class="wayfinding">
 			<a class="wayfinding-item home" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Home</a>
-			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Cart</a>
-			<a class="wayfinding-item current" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Address Info</a>
-			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Shipping Method</a>
-			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Payment</a>
+			<a class="wayfinding-item" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Category</a>
+			<a class="wayfinding-item" href="product-listings.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> New Arrivals</a>
+			<a class="wayfinding-item current" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Detailed Product</a>
 		</div>
 
 		<div class="detailed-product-container">
@@ -73,11 +72,21 @@
 				<h2 class="product product-name">Pink & Lavender Mechanical Keyboard</h2>
 				<h4 class="product product-price">$50</h4>
 				<p class="product product-description">Super dope keyboard. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis sed arcu vitae semper. Vestibulum ullamcorper turpis rutrum luctus fringilla. Cras id sem et augue scelerisque suscipit nec sed dolor. Phasellus nec nulla tincidunt, porta quam a, aliquam nulla.</p>
-				<button class="add-to-cart-button button-style">add to cart</button>
+				<a href="cart.html"><button class="add-to-cart-button button-style">add to cart</button></a>
 			</div>
 		</div>
 
 		<div class="detailed-product-info">
+			<!-- Collapsible Section -->
+			<button type="button" class="product-info-collapsible">Product Info</button>
+			<div class="collapsible-content">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis sed arcu vitae semper. Vestibulum ullamcorper turpis rutrum luctus fringilla. Cras id sem et augue scelerisque suscipit nec sed dolor. Phasellus nec nulla tincidunt, porta quam a, aliquam nulla.</p>
+			</div>
+
+			<button type="button" class="comments-reviews-collapsible">Comments & Reviews</button>
+			<div class="collapsible-content">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis sed arcu vitae semper. Vestibulum ullamcorper turpis rutrum luctus fringilla. Cras id sem et augue scelerisque suscipit nec sed dolor. Phasellus nec nulla tincidunt, porta quam a, aliquam nulla.</p>
+			</div>
 		</div>
 
 				<footer> <!-- Start of Footer -->
