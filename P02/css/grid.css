@@ -68,8 +68,8 @@
     margin-left: 4.75em;
 }
 
-@media screen and (min-width: 375px) {
-    .cart-container, .container, .product-listings .sub-container {
+@media screen and (min-width: 376px) {
+    .cart-container, .container, .product-listings .sub-container{
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
@@ -86,10 +86,49 @@
     .shipping-information .vertical-order-summary {
         margin-right: 15em;
     }
+
+    /* Payment page */
+
+    .payment h1, .payment h2, .payment .payment-outter {
+        margin-left: 150px;
+        margin-right: 150px;
+        text-align: left;
+    }
+
+    .payment .payment-outter {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment .payment-outter .row {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: .65em;
+    }
+
+    .payment .payment-outter .long-field input, .payment .payment-outter .long-field label, .payment .payment-outter .short-field label {
+        max-width: 22em;
+    }
+
+    .payment .payment-outter .short-field input {
+        max-width: 10em;
+    }
+
+    .payment .payment-outter .radio input {
+        margin-top: 3em;
+    }
+
+    .payment .payment-outter .radio p {
+        margin-top: 2.75em;
+    }
 }
 
 @media screen and (max-width: 375px) {
-    .cart-container, .container, .product-listings .sub-container {
+    .cart-container, .container, .product-listings .sub-container, .payment .payment-outter .submission {
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
@@ -103,4 +142,50 @@
         margin-right: 1.4em;
     }
 
+    /* Payment Page */
+    .wayfinding-payment {
+        margin-bottom: 1em;
+    }
+
+    .payment {
+        flex-direction: column-reverse;
+    }
+
+    .payment .payment-outter .row {
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+
+    .payment .payment-outter .radio {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: -webkit-flex;
+        flex-wrap: -ms-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+
+    .payment h1, .payment h2, .payment .payment-outter {
+        margin: 20px;
+        text-align: left;
+    }
+
+    .payment .payment-outter .radio * {
+        margin-top: none;
+    }
+
+    .payment .payment-outter .radio p {
+        position: absolute;
+    }
+
+    .payment .payment-outter .radio .icon {
+        font-size: 2em;
+    }
+
+    .payment .payment-outter .submission div {
+        margin-top: 1em;
+        text-align: center;
+    }
 }
