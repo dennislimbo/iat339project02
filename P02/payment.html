@@ -14,7 +14,7 @@
 
 	<body>
 		<!-- Wayfinding/Breadcrumb-->
-		<div class="wayfinding">
+		<div class="wayfinding wayfinding-payment">
 			<a class="wayfinding-item home" href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Home</a>
 			<a class="wayfinding-item" href="cart.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Cart</a>
 			<a class="wayfinding-item" href="shipping-info.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Address Info</a>
@@ -26,17 +26,54 @@
 		<section class="container payment">
 			<!-- Payment Method Module-->
 			<section class="col-one">
-				<a href="order-confirm.html">WORK IN PROGRESS, CLICK TO GO TO NEXT STEP (ORDER CONFIRMATION)</a>
 				<h1 class="medium">zen keebs</h1>
 				<h2 class="medium">Payment Methods</h2>
-				<div class="container">
-					<div class="col-one">
-						<a href="#" class="payment"></a>
+				<!-- Payment Form -->
+				<form action="#" class="payment-outter">
+					<div class="row radio">
+						<p>Card Type</p>
+						<div>
+							<input class="col-one" type="radio" id="visa">
+						<label class="icon col-one" for="visa"><i class="fab fa-cc-visa fa-3x"></i></label>
+						</div>
+						<div>
+							<input class="col-one" type="radio" id="master">
+						<label class="icon col-one" for="master"><i class="fab fa-cc-mastercard fa-3x"></i></label>
+						</div>
+						<div>
+							<input class="col-one" type="radio" id="apple">
+						<label class="icon col-one" for="apple"><i class="fab fa-cc-apple-pay fa-3x"></i></label>
+						</div>
+						<div>
+							<input class="col-one" type="radio" id="paypal">
+						<label class="icon col-one" for="paypal"><i class="fab fa-cc-paypal fa-3x"></i></label>
+						</div>
 					</div>
-					<div class="col-one">
-						
+					<div class="row long-field">
+						<label class="col-one" for="card-name">Cardholder Name (as it appears on card)</label>
+						<input class="col-one" type="text" name="card-name" id="card-name">
 					</div>
-				</div>
+					<div class="row long-field">
+						<label class="col-one" for="card-num">Card Number</label>
+						<input class="col-one" type="text" name="card-num" id="card-num">
+					</div>
+					<div class="row short-field">
+						<label class="col-one" for="exp-date">Expiration Date (mm/yy)</label>
+						<input class="col-one" type="text" name="exp-date" id="exp-date">
+					</div>
+					<div class="row short-field">
+						<label class="col-one" for="security-code">Security Code (on back of card)</label>
+						<input class="col-one" type="text" name="security-code" id="security-code">
+					</div>
+					<div class="row submission">
+						<div class="col-two">
+							<a href="shipping-method.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Return to Shipping Methods</a>
+						</div>
+						<div class="col-one">
+							<a class="button" href="order-confirm.html"><button type="button">Confirm Payment</button></a>
+						</div>
+					</div>
+				</form>
 			</section>
 			<!-- Vertical Order Summary Module -->
 			<section class="vertical-order-summary col-one">

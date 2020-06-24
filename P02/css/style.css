@@ -850,7 +850,7 @@ nav .nav-button {
 .order-confirmation-module {
     background: #C4D4C6;
     margin: 0 10em;
-    padding: 0 8.5625em;
+    padding: 0 20em;
     padding-bottom: 4em;
 }
 
@@ -922,6 +922,45 @@ nav .nav-button {
 .order-confirmation-module .return-button a:active,
 .order-confirmation-module .return-button:active {
     color: #1A281F;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 375px) {
+    .order-confirmation-module {
+        padding: 0 8.5em;
+        padding-bottom: 4em;
+    }
+
+    .order-confirmation-module h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .order-confirmation-module {
+        margin: 0;
+        padding: 0 5em;
+        padding-bottom: 4em;
+    }
+
+    .order-confirmation-module h1 {
+        font-size: 1.5em;
+    }
+    
+    .order-confirmation-module p {
+        font-size: .8em;
+    }
+
+    .order-confirmation-module .return-button {
+        font-size: 1em;
+    }
+
+    .order-confirmation-module .order-item .item-name, .order-confirmation-module .order-item .item-details {
+        display: inline;
+    }
+
+    .order-confirmation-module .order-item .item-details {
+        left: 75px;
+    }
 }
 
 /* HOME SECTION */
@@ -1123,4 +1162,46 @@ input[type=text]:focus, textarea {
 
 .account-summary button:active {
     background: #1A281F;
+}
+
+/* Payment */
+
+.payment .payment-outter button {
+    top: 187px;
+    width: 214px;
+    height: 55px;
+    background: #709775;
+    border-radius: 28px;
+    border: none;
+    color: white;
+}
+
+.payment .payment-outter button:hover, .payment .payment-outter button:focus {
+    background: #345F39;
+}
+
+.payment .payment-outter button:active {
+    background: #1A281F;
+}
+
+.payment .payment-outter button {
+    margin-left: auto;
+}
+
+.payment .icon i{
+    color: #1A281F;
+    margin-left: -1px;
+}
+
+.payment .col-two a {
+    text-decoration: none;
+    color: #898989;
+}
+
+.payment .col-two a:hover, .payment .col-two a:focus, .payment .col-two a:active {
+    color: #1A281F;
+}
+
+@media screen and (max-width: 375px) {
+    
 }
