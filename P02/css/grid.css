@@ -41,17 +41,30 @@
 
 
 /* FOOTER SECTION */
+
 .footer-container {
 	display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.footer-box {
-	display: inline-block;
-    vertical-align: top;
+@media screen and (max-width: 375px) {
+	.footer-container {
+		display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: -webkit-flex;
+        flex-wrap: -ms-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+	}
 }
 
+.footer-social-media li{
+	display: inline;
+}
+
+/*remove this if unused */
 .col-one {
     flex: 1 1 auto;
 }
