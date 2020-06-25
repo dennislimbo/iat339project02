@@ -15,6 +15,10 @@ body {
     font-size: 1em;
 }
 
+a {
+    text-decoration: none;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -866,7 +870,13 @@ nav .nav-button {
 .home-hero-image img {
     flex-shrink: 0;
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
+}
+
+@media screen and (max-width: 375px) {
+    .home-hero-image {
+        min-height: 50%;
+    }
 }
 
 .home-body-item {
@@ -878,6 +888,7 @@ nav .nav-button {
 .hero-image {
     object-fit: cover;
 }
+
 /* ABOUT SECTION */
 .about-body-content {
     max-width: 50rem;
@@ -971,13 +982,23 @@ input[type=text]:focus, textarea {
 .footer-container {
     background-color: #1A281F;
     margin: 0;
-    padding: 2rem;
+    padding: 4rem;
+    color: #FFFFFF;
+}
+
+.footer-site-name {
+    font-size: 3rem;
+    font-weight: 700;
     color: #FFFFFF;
 }
 
 .footer-header {
-    font-weight: 700;
+    font-weight: 600;
     color: #709775;
+}
+
+.footer-body-text {
+    margin-bottom: 0.5rem;
 }
 
 .footer-menu {
@@ -993,8 +1014,82 @@ input[type=text]:focus, textarea {
 }
 
 .footer-box {
-    padding: 2rem;
-    margin: 3rem 1rem;
+    margin: 0rem 3rem;
+}
+
+.social-media-icons {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+    .footer-box {
+        margin: 0rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 375px) {
+    .footer-box {
+        margin: 0rem 1rem;
+    }
+}
+
+.account-summary .order-item {
+    position: relative;
+    font-size: 1.2em;
+}
+
+.account-summary .order-item * {
+    position: absolute;
+    top: 0px;
+}
+
+.account-summary .first {
+    top: 4em;
+}
+
+.account-summary .second {
+    top: 8em;
+}
+
+.account-summary .third {
+    top: 12em;
+}
+
+/* User Info Styling */
+
+.account-summary .user-info h2 {
+    font-size: 1.5em;
+}
+
+.account-summary .user-info p {
+    font-size: 1.4375em;
+}
+
+.account-summary .user-info .name {
+    margin-bottom: 3.375em;
+}
+
+.account-summary .user-info .country {
+    margin-bottom: 1.5625em;
+}
+
+.account-summary button {
+    top: 187px;
+    width: 214px;
+    height: 55px;
+    background: #709775;
+    border-radius: 28px;
+    border: none;
+    color: white;
+}
+
+.account-summary button:hover, .account-summary button:focus {
+    background: #345F39;
+}
+
+.account-summary button:active {
+    background: #1A281F;
 }
 
 /* Payment */
