@@ -69,30 +69,17 @@
 
 
 /* FOOTER SECTION */
-
 .footer-container {
 	display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-@media screen and (max-width: 375px) {
-	.footer-container {
-		display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        flex-wrap: -webkit-flex;
-        flex-wrap: -ms-flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-	}
+.footer-box {
+	display: inline-block;
+    vertical-align: top;
 }
 
-.footer-social-media li{
-	display: inline;
-}
-
-/*remove this if unused */
 .col-one {
     flex: 1 1 auto;
 }
@@ -110,7 +97,7 @@
 }
 
 @media screen and (min-width: 376px) {
-    .cart-container, .container, .product-listings .sub-container{
+    .cart-container, .container, .account-summary .order-item, .cart-item, .order-price-summary, .product-listings .sub-container{
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
@@ -120,17 +107,74 @@
         flex-direction: row;
     }
 
+    /* Account Page Styling */
+
+    .account-summary {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    #account-header {
+        margin: 2em 0px;
+    }
+
+    .orders h2 {
+        margin-bottom: 1.5em;
+    }
+
+    .orders .order-item {
+        margin-bottom: 2em;
+    }
+
+    
+    .account-summary .user-info .name {
+        margin-bottom: 3.375em;
+    }
+
+    .account-summary .user-info .country {
+        margin-bottom: 1.5625em;
+    }
+
+    .account-summary .user-info {
+        margin-bottom: 10em;
+    }
+    
+    /* Cart and Order Summary Module */
+
+    .vertical-order-summary {
+        margin-right: 150px;
+    }
+
+    .vertical-order-summary .cart-item, .horizontal-order-summary .cart-item {
+        padding-bottom: 2em;
+        margin-bottom: 3.5em;
+    }
+
+    .vertical-order-summary .cart-item h2, .horizontal-order-summary .cart-item h2 {
+        margin-bottom: 3em;
+    }
+
+    .vertical-order-summary .cart-item p, .horizontal-order-summary .cart-item p {
+        margin-top: .2em;
+    }
+
+    .order-price-summary h3, .order-price-summary p{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .order-price-summary .total-price, .order-price-summary .myTotal {
+        padding-bottom: 1.5em;
+        padding-top: 2.2em;
+    }
+
     .cart-container .col-two {
         margin-right: 10em;
     }
 
-    .shipping-information .vertical-order-summary {
-        margin-right: 15em;
-    }
-
     /* Payment page */
 
-    .payment h1, .payment h2, .payment .payment-outter {
+    .payment h1, .payment .payment-header, .payment .payment-outter {
         margin-left: 150px;
         margin-right: 150px;
         text-align: left;
@@ -169,6 +213,17 @@
 }
 
 @media screen and (max-width: 375px) {
+
+    .cart-item, .order-price-summary {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: -webkit-flex;
+        flex-wrap: -ms-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
     .cart-container, .container, .product-listings .sub-container, .payment .payment-outter .submission {
         display: -webkit-flex;
         display: -ms-flex;
@@ -182,6 +237,55 @@
     .cart-container .col-two {
         margin-right: 1.4em;
     }
+
+    /* Account Page Styling Information */
+
+    #account-header, .account-summary {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .orders h2 {
+        margin-bottom: 1em;
+    }
+
+    .orders .order-item {
+        margin-bottom: 2em;
+    }
+
+    .user-info, .user-info .name {
+        margin-bottom: 1.5em;
+    }
+
+    .user-info button {
+        margin-top: 2em;
+    }
+
+    /*Cart and Order Summary */
+
+    .vertical-order-summary .cart-item, .horizontal-order-summary .cart-item {
+        padding-bottom: 2em;
+        margin-bottom: 2.5em;
+    }
+
+    .vertical-order-summary .cart-item h2, .horizontal-order-summary .cart-item h2 {
+        margin-bottom: 2em;
+    }
+    
+    .vertical-order-summary .cart-item p, .horizontal-order-summary .cart-item p {
+        margin-top: .2em;
+    }
+
+    .order-price-summary h3, .order-price-summary p, .horizontal-order-summary .sticky{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .order-price-summary .total-price, .order-price-summary .myTotal {
+        padding-bottom: 1.5em;
+        padding-top: 2.2em;
+    }
+    
 
     /* Payment Page */
     .wayfinding-payment {
@@ -208,7 +312,7 @@
     }
 
 
-    .payment h1, .payment h2, .payment .payment-outter {
+    .payment h1, .payment .payment-header, .payment .payment-outter {
         margin: 20px;
         text-align: left;
     }

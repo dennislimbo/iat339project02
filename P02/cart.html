@@ -28,49 +28,71 @@
 		<div class="cart-container">
 			
 			<!-- Cart information-->
-			<div class="grid-box col-two">
-				<h1 class="medium">Your Shopping Cart</h1>
+			<div class="horizontal-order-summary col-two">
+				<h1 class="medium">My Cart</h1>
 				<div class="cart-item">
-					<div class="cart-image-placeholder"></div>
-					<h2 class="normal item-name">Item 1</h2>
-					<p class="price">$20.00</p>
-					<a class="modify" href="#">Modify</a>
-					<i class="fas fa-grip-lines-vertical"></i>
-					<a class="remove" href="#">Remove</a>
+					<div class="col-one">
+						<div class="cart-image-placeholder"></div>
+					</div>
+					<div class="col-two">
+						<h2 class="normal item-name">Item 1</h2>
+						<a class="modify" href="#">Modify</a>
+						<i class="fas fa-grip-lines-vertical"></i>
+						<a class="remove" href="#">Remove</a>
+					</div>
+					<div class="col-one">
+						<p class="price">$20.00</p>
+					</div>
 				</div>
 				<div class="cart-item">
-					<div class="cart-image-placeholder"></div>
-					<h2 class="normal item-name">Item 2</h2>
-					<p class="price">$20.00</p>
-					<a class="modify" href="#">Modify</a>
-					<i class="fas fa-grip-lines-vertical"></i>
-					<a class="remove" href="#">Remove</a>
+					<div class="col-one">
+						<div class="cart-image-placeholder"></div>
+					</div>
+					<div class="col-two">
+						<h2 class="normal item-name">Item 1</h2>
+						<a class="modify" href="#">Modify</a>
+						<i class="fas fa-grip-lines-vertical"></i>
+						<a class="remove" href="#">Remove</a>
+					</div>
+					<div class="col-one">
+						<p class="price">$20.00</p>
+					</div>
 				</div>
 				<div class="cart-item">
-					<div class="cart-image-placeholder"></div>
-					<h2 class="normal item-name">Item 3</h2>
-					<p class="price">$20.00</p>
-					<a class="modify" href="#">Modify</a>
-					<i class="fas fa-grip-lines-vertical"></i>
-					<a class="remove" href="#">Remove</a>
+					<div class="col-one">
+						<div class="cart-image-placeholder"></div>
+					</div>
+					<div class="col-two">
+						<h2 class="normal item-name">Item 1</h2>
+						<a class="modify" href="#">Modify</a>
+						<i class="fas fa-grip-lines-vertical"></i>
+						<a class="remove" href="#">Remove</a>
+					</div>
+					<div class="col-one">
+						<p class="price">$20.00</p>
+					</div>
 				</div>
 			</div>
 
 			<!-- Price Summary-->
-			<div class="grid-box col-one">
-				<h2 class="medium">Summary</h2>
-				<div class="order-price-summary">
-					<p class="subtotal-price">$60.00</p>
-					<h3 class="medium subtotal">Subtotal</h3>
-					<p class="est-shipping-price">$15.00</p>
-					<h3 class="medium est-shipping">Estimated Shipping & Handling</h3>
-					<p class="taxes-price">$0.00</p>
-					<h3 class="medium taxes">Taxes</h3>
-					<p class="total-price">$75.00</p>
-					<div class="total">
-						<h3 class="medium" id="myTotal">Total</h3>
+			<div class="horizontal-order-summary col-one">
+				<div class="sticky">
+					<h2 class="medium">Summary</h2>
+				<div class="order-price-summary medium">
+					<div class="col-three">
+						<h3 class="medium subtotal">Subtotal</h3>
+						<h3 class="medium est-shipping">Estimated Shipping & Handling</h3>
+						<h3 class="medium taxes">Taxes</h3>
+						<h3 class="medium myTotal">Total</h3>
 					</div>
-					<button class="checkout-btn" type="button">Check out</button>
+					<div class="col-one">
+						<p class="subtotal-price">$60.00</p>
+						<p class="est-shipping-price">$15.00</p>
+						<p class="taxes-price">$0.00</p>
+						<p class="total-price">$75.00</p>
+					</div>
+				</div>
+				<button class="checkout-btn" type="button">Check out</button>
 				</div>
 			</div>
 		</div>
@@ -78,64 +100,54 @@
 		<!-- Start of Footer -->
 		<footer>
 			<div class="footer-container">
-				<div class="footer-box">
-					<p class="footer-site-name">zenkeebs</p>
-					<ul class="footer-menu">
-						<li>© 2010 — 2020</li>
-					</ul>
+				<div class="footer-box footer-col-one">
+					<p>zenkeebs</p>
 				</div>
-				<div class="footer-box">
+				<div class="footer-box footer-col-two">
 
 					<ul class="footer-menu">
 						<li class="footer-header">shop</li>
-						<li><a href="product-listings.html" class="footer-menu-item">all products</a></li>
-						<li><a href="product-listings.html" class="footer-menu-item">new arrivals</a></li>
-						<li><a href="product-listings.html" class="footer-menu-item">keyboards</a></li>
-						<li><a href="product-listings.html" class="footer-menu-item">accesories</a></li>
-						<li><a href="product-listings.html" class="footer-menu-item">plates</a></li>
-						<li><a href="product-listings.html" class="footer-menu-item">switches</a></li>
-						<li><a href="product-listings.html" class="footer-menu-item">keycaps</a></li>
+						<li><a href="" class="footer-menu-item">category</a></li>
+						<li><a href="" class="footer-menu-item">category</a></li>
+						<li><a href="" class="footer-menu-item">category</a></li>
+						<li><a href="" class="footer-menu-item">category</a></li>
+						<li><a href="" class="footer-menu-item">category</a></li>
 					</ul>
 				</div>
 
-				<div class="footer-box">
+				<div class="footer-box footer-col-three">
 					<ul class="footer-menu">
-						<li class="footer-header">menu</li>
-						<li><a href="" class="footer-menu-item">home</a></li>
-						<li><a href="" class="footer-menu-item">about</a></li>
-						<li><a href="" class="footer-menu-item">shop</a></li>
-						<li><a href="" class="footer-menu-item">services</a></li>
-						<li><a href="" class="footer-menu-item">profile</a></li>
-						<li><a href="" class="footer-menu-item">cart</a></li>
+						<li class="footer-header">menu</li	>
+						<li><a href="" class="footer-menu-item">link</a></li>
+						<li><a href="" class="footer-menu-item">link</a></li>
+						<li><a href="" class="footer-menu-item">link</a></li>
+						<li><a href="" class="footer-menu-item">link</a></li>
+						<li><a href="" class="footer-menu-item">link</a></li>
 					</ul>				
 
 				</div>
-				<div class="footer-box">
+				<div class="footer-box footer-col-four">
 					<!--Email and Address-->
 					<p class="footer-header">contact</p>
 					<p class="footer-body-text">
-						<ul class="footer-menu">
-							<li>email: help@zenkeebs.com</li>
-							<li>call: 1.800.123.1234</li>
-						<ul>
+						email: help@zenkeebs.com
+						call: 1.800.123.1234 
 
 					</p>
+					<p class="footer-header">zen keebs</p>
 					<p class="footer-body-text">
-						<ul class="footer-menu">
-							<li>1234 Fake Street</li>
-							<li>Surrey, BC B4K 619</li>
-							<li>Canada</li>
-						</ul>
+						1234 Fake Street
+						Surrey, BC B4K 619
+						Canada
 					</p>
 				</div>
-				<div class="footer-box">
+				<div class="footer-box footer-col-five">
+
 					<!--Social Media Links-->
 					<p class="footer-header">social media</p>
-					<ul class="footer-menu footer-social-media">
-						<li><a href="https://www.facebook.com/"><i class="fab fa-2x fa-facebook social-media-icons"></i></a></li>
-						<li><a href="https://www.instagram.com"><i class="fab fa-2x fa-instagram social-media-icons"></i></a></li>
-						<li><a href="https://www.twitter.com"><i class="fab fa-2x fa-twitter social-media-icons"></i></a></li>
-					</ul>
+					<a href="#" class="social-media-icons"><i class="fab fa-2x fa-facebook"></i></a>
+					<a href="#" class="social-media-icons"><i class="fab fa-2x fa-instagram"></i></a>
+					<a href="#" class="social-media-icons"><i class="fab fa-2x fa-twitter"></i></a>
 				</div>
 			</div>
 		</footer> <!-- End of Footer -->

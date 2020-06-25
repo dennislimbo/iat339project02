@@ -297,46 +297,23 @@ nav .nav-button {
 }
 
 .cart-item {
-    width: 100%;
-    height: 150px;
-    position: relative;
-    margin-top: 35px;
-    padding-bottom: 2.5em;
     border-bottom: 1px solid #d6d6d6;
 }
 
 .cart-item * {
-    position: absolute;
     text-decoration: none;
 }
 
 .cart-item .item-name {
-    top: 0px;
-    left: 150px;
     line-height: 22px;
     font-size: 1.5em;
 }
 
 .cart-item .price {
     line-height: 17px;
-    left: 475px;
-    top: 0;
-}
-
-.cart-item .modify {
-    left: 150px;
-}
-
-.cart-item .fa-grip-lines-vertical {
-    left: 210px;
-}
-
-.cart-item .remove {
-    left: 225px;
 }
 
 .cart-item .remove, .cart-item .modify, .cart-item i {
-    top: 100px;
     color: #9b9b9b;
 }
 
@@ -347,53 +324,18 @@ nav .nav-button {
 /* Cart Summary */
 
 .order-price-summary {
-    position: relative;
     height: 253px;
-    margin-top: .7em;
-    font-weight: 500;
-}
-
-.order-price-summary *{
-    position: absolute;
 }
 
 .subtotal, .est-shipping, .taxes, .total, .order-price-summary .checkout-btn {
-    left: 0;
     font-size: 1em;
 }
 
-.subtotal-price, .est-shipping-price, .taxes-price, .total-price {
-    left: 277px;
-}
-
-.subtotal, .subtotal-price {
-    top: 0;
-}
-
-.est-shipping, .est-shipping-price {
-    top: 28px;
-}
-
-.taxes, .taxes-price {
-    top: 56px;
-}
-
-.order-price-summary .total {
-    width: 340px;
-    height: 65px;
-    padding-bottom: 1.5em;
-    padding-top: 1.5em;
+.order-price-summary .total-price, .order-price-summary .myTotal {
     border-top: 1px solid #D6D6D6;
-    border-bottom: 1px solid #D6D6D6;
-    top: 108px;
 }
 
-.total-price {
-    top: 135px;
-}
-
-.order-price-summary button {
-   top: 187px;
+.horizontal-order-summary .checkout-btn {
    width: 340px;
    height: 66px;
    background: #709775;
@@ -402,8 +344,8 @@ nav .nav-button {
    color: white;
 }
 
-.order-price-summary button:hover, .order-price-summary button:focus {
-    background: #313131;
+.horizontal-order-summary .checkout-btn:hover, .horizontal-order-summary .checkout-btn:focus, .horizontal-order-summary .checkout-btn:active {
+    background: #1A281F;
 }
 
 @media screen and (max-width: 375px) {
@@ -413,8 +355,9 @@ nav .nav-button {
         margin: 0 20px;
     }
 
-    .cart-container h1, .cart-container .h2 {
+    .cart-container h1 {
         margin-top: 0.5em;
+        margin-bottom: .5em;
         font-size: 1.5em;
     }
 
@@ -426,47 +369,20 @@ nav .nav-button {
     }
 
     .cart-item {
-        width: 100%;
-        width: 323px;
-        height: 113px;
-        position: relative;
-        padding-bottom: 1.5em;
         border-bottom: 1px solid #d6d6d6;
     }
 
     .cart-item * {
-        position: absolute;
         text-decoration: none;
     }
 
     .cart-item .item-name {
-        top: 0px;
-        left: 120px;
         line-height: 22px;
-        font-size: 1.5em;
-    }
-
-    .cart-item .price {
-        line-height: 1.5em;
-        left: 272px;
-        top: 0;
-        text-align: right;
-    }
-
-    .cart-item .modify {
-        left: 120px;
-    }
-
-    .cart-item .fa-grip-lines-vertical {
-        left: 180px;
-    }
-
-    .cart-item .remove {
-        left: 195px;
+        font-size: 1.2em;
     }
 
     .cart-item .remove, .cart-item .modify, .cart-item i {
-        top: 75px;
+        font-size: 1em;
         color: #9b9b9b;
     }
 
@@ -477,50 +393,12 @@ nav .nav-button {
     /* Cart Summary */
 
     .order-price-summary {
-        position: relative;
-        width: 323px;
-        height: 253px;
         margin-top: .7em;
         font-weight: 500;
     }
 
-    .order-price-summary *{
-        position: absolute;
-    }
-
     .subtotal, .est-shipping, .taxes, .total, .order-price-summary .checkout-btn {
-        left: 0;
         font-size: 1em;
-    }
-
-    .subtotal-price, .est-shipping-price, .taxes-price, .total-price {
-        left: 272px;
-    }
-
-    .subtotal, .subtotal-price {
-        top: 0;
-    }
-
-    .est-shipping, .est-shipping-price {
-        top: 28px;
-    }
-
-    .taxes, .taxes-price {
-        top: 56px;
-    }
-
-    .order-price-summary .total {
-        width: 323px;
-        height: 65px;
-        padding-bottom: 1.5em;
-        padding-top: 1.5em;
-        border-top: 1px solid #D6D6D6;
-        border-bottom: 1px solid #D6D6D6;
-        top: 108px;
-    }
-
-    .total-price {
-        top: 135px;
     }
 
     .order-price-summary button {
@@ -548,6 +426,7 @@ nav .nav-button {
 
 .product-listings h1 {
     margin-left: 2.23em;
+    text-align: left;
 }
 
 /* Filters Section */
@@ -791,46 +670,28 @@ nav .nav-button {
 
 /* Account Styling */
 
-.account-summary {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
 #account-header {
     text-align: center;
-    margin-top: 3em;
-    margin-bottom: 2.5em;
     font-size: 2.25em;
 }
 
-.account-summary .order-header {
-    position: relative;
+.orders h2 {
+    text-align: left;
+    font-size: 1.75em;
 }
 
-.account-summary .order-header h2 {
-    position: absolute;
-    top: 0px;
-}
-
-.account-summary .order-item p, .account-summary .order-item a {
+.account-summary .order-item p {
     font-size: 1.5em;
 }
 
 .account-summary .order-item a {
-    font-weight: 500;
+    text-decoration: underline;
+    font-weight: 600;
     color: #1A281F;
 }
 
-.account-summary .order-item a:hover, .account-summary .order-item a:focus {
-    font-weight: 600;
-}
-
-.account-summary .order-date {
-    left: 420px;
-}
-
-.account-summary .order-price {
-    left: 581.68px;
+.account-summary .order-item a:hover, .account-summary .order-item a:focus, .account-summary .order-item a:active {
+    text-decoration: none;
 }
 
 .item:hover {
@@ -856,6 +717,38 @@ nav .nav-button {
 
 .button-style:hover, .button-style:active, .button-style:focus {
     background-color: #345F39;
+}
+/* User Info Styling */
+
+.account-summary .user-info h2 {
+    font-size: 1.5em;
+}
+
+.account-summary .user-info p {
+    font-size: 1.4375em;
+}
+
+.account-summary button {
+    width: 214px;
+    height: 55px;
+    background: #709775;
+    border-radius: 28px;
+    border: none;
+    color: white;
+}
+
+.account-summary button:hover, .account-summary button:focus {
+    background: #345F39;
+}
+
+.account-summary button:active {
+    background: #1A281F;
+}
+
+@media screen and (max-width: 375px) {
+    #account-header {
+        text-align: left;
+    }
 }
 
 /* Order Confirmation */
@@ -998,7 +891,7 @@ nav .nav-button {
 .home-hero-image img {
     flex-shrink: 1;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100%
 }
 
 @media screen and (max-width: 375px) {
@@ -1034,7 +927,6 @@ nav .nav-button {
 .hero-image {
     object-fit: cover;
 }
-
 /* ABOUT SECTION */
 .about-body-content {
     max-width: 50rem;
@@ -1141,23 +1033,13 @@ input[type=text]:focus, textarea {
 .footer-container {
     background-color: #1A281F;
     margin: 0;
-    padding: 4rem;
-    color: #FFFFFF;
-}
-
-.footer-site-name {
-    font-size: 3rem;
-    font-weight: 700;
+    padding: 2rem;
     color: #FFFFFF;
 }
 
 .footer-header {
-    font-weight: 600;
+    font-weight: 700;
     color: #709775;
-}
-
-.footer-body-text {
-    margin-bottom: 0.5rem;
 }
 
 .footer-menu {
@@ -1173,7 +1055,8 @@ input[type=text]:focus, textarea {
 }
 
 .footer-box {
-    margin: 0rem 3rem;
+    padding: 2rem;
+    margin: 3rem 1rem;
 }
 
 .social-media-icons {
@@ -1194,25 +1077,7 @@ input[type=text]:focus, textarea {
 }
 
 .account-summary .order-item {
-    position: relative;
     font-size: 1.2em;
-}
-
-.account-summary .order-item * {
-    position: absolute;
-    top: 0px;
-}
-
-.account-summary .first {
-    top: 4em;
-}
-
-.account-summary .second {
-    top: 8em;
-}
-
-.account-summary .third {
-    top: 12em;
 }
 
 /* User Info Styling */
@@ -1287,8 +1152,4 @@ input[type=text]:focus, textarea {
 
 .payment .col-two a:hover, .payment .col-two a:focus, .payment .col-two a:active {
     color: #1A281F;
-}
-
-@media screen and (max-width: 375px) {
-    
 }
