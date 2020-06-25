@@ -677,6 +677,7 @@ nav .nav-button {
 }
 
 .account-summary .order-item a {
+    text-decoration: underline;
     font-weight: 600;
     color: #1A281F;
 }
