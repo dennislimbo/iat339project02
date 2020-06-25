@@ -673,6 +673,7 @@ nav .nav-button {
 }
 
 .account-summary .order-item a {
+    text-decoration: underline;
     font-weight: 600;
     color: #1A281F;
 }
@@ -995,6 +996,63 @@ input[type=text]:focus, textarea {
 .footer-box {
     padding: 2rem;
     margin: 3rem 1rem;
+}
+
+.social-media-icons {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+    .footer-box {
+        margin: 0rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 375px) {
+    .footer-box {
+        margin: 0rem 1rem;
+    }
+}
+
+.account-summary .order-item {
+    font-size: 1.2em;
+}
+
+/* User Info Styling */
+
+.account-summary .user-info h2 {
+    font-size: 1.5em;
+}
+
+.account-summary .user-info p {
+    font-size: 1.4375em;
+}
+
+.account-summary .user-info .name {
+    margin-bottom: 3.375em;
+}
+
+.account-summary .user-info .country {
+    margin-bottom: 1.5625em;
+}
+
+.account-summary button {
+    top: 187px;
+    width: 214px;
+    height: 55px;
+    background: #709775;
+    border-radius: 28px;
+    border: none;
+    color: white;
+}
+
+.account-summary button:hover, .account-summary button:focus {
+    background: #345F39;
+}
+
+.account-summary button:active {
+    background: #1A281F;
 }
 
 /* Payment */
