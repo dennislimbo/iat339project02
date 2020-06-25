@@ -11,14 +11,35 @@
 }
 
 /* DETAILED PRODUCT SECTION */
+.responsive-img {
+	width: 100%;
+	height: auto;
+}
+
 .detailed-product-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
+@media screen and (max-width: 375px) {
+	.detailed-product-container {
+		flex-direction: column;
+	}
+}
+
 .add-to-cart-button {
-	float: right;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+.detailed-product-info {
+	margin-top: 4rem;
+	padding: 1rem;
+}
+
+.product-info-list {
+	margin: 1rem 0rem;
 }
 
 /* SERVICES SECTION */
@@ -26,11 +47,18 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	justify-content: center;
 }
 
 .services-body-item {
 	display: flex;
 	flex-direction: row;
+}
+
+@media screen and (max-width: 375px) {
+	.services-body-item {
+		flex-direction: column;
+	}
 }
 
 /* CONTACT US SECTION */
