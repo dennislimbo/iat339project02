@@ -4,6 +4,13 @@
     justify-content: center;
 }
 
+.home-body-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
 /* ABOUT US SECTION */
 .about-body-container {
     display: flex;

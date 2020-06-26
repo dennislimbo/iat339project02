@@ -928,12 +928,6 @@ nav ul ul li {
     margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 1366px) and (min-width: 375px) {
-    .detailed-product-container {
-
-    }
-}
-
 @media screen and (max-width: 375px) {
     .about-body-content {
         margin: 0.5rem;
