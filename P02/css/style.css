@@ -899,6 +899,16 @@ nav ul ul li {
     cursor: pointer;
 }
 
+@media screen and (max-width: 375px) {
+    .page-header hero-header {
+        font-size: 1rem;
+    }
+
+    .home-advertise-item button {
+        size: 30%;
+    }
+}
+
 .home-body-item {
     padding: 2rem;
     max-width: 50rem;
@@ -954,6 +964,33 @@ nav ul ul li {
 
 .product-info-list {
     list-style-position: inside;
+}
+
+.detailed-product-description {
+    margin-bottom: 30rem;
+}
+
+.product-reviews fa-angle-down {
+    float: right;
+}
+
+.dropdown-toggle {
+    border-bottom: 0.1rem solid #709775;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+}
+
+.dropdown-box {
+    display: none;
+    height: 20rem;
+}
+
+.product-reviews input:checked ~ .dropdown-box {
+    display: block;
 }
 
 /* SERVICES SECTION */
