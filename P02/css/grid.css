@@ -11,9 +11,16 @@
 }
 
 /* DETAILED PRODUCT SECTION */
-.responsive-img {
+@media screen and (max-width: 375px) {
+	.responsive-img {
 	width: 100%;
 	height: auto;
+	}
+}
+
+.detailed-product-image img{
+	display: block;
+	margin-bottom: 1rem;
 }
 
 .detailed-product-container {
@@ -42,6 +49,16 @@
 	margin: 1rem 0rem;
 }
 
+.product-reviews {
+	flex-direction: column;
+}
+
+.dropdown-icon {
+	float: right;
+	margin-top: -2rem;
+}
+
+
 /* SERVICES SECTION */
 .services-body-container {
 	display: flex;
@@ -58,6 +75,17 @@
 @media screen and (max-width: 375px) {
 	.services-body-item {
 		flex-direction: column;
+	}
+
+	.services-form-row {
+		display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: -webkit-flex;
+        flex-wrap: -ms-flex;
+        flex-wrap: wrap;
+        
+        max-width: 100%;
 	}
 }
 
