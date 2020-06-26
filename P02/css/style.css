@@ -999,6 +999,9 @@ nav ul ul li {
 }
 
 /* SERVICES SECTION */
+.services-banner-image img{
+    width: 100%;
+}
 
 .services-body-container {
     margin: 0rem;
@@ -1027,6 +1030,18 @@ nav ul ul li {
 textarea {
     resize: none;
     padding: 0.5rem;
+}
+
+@media screen and (max-width: 375px) {
+    .services-form-container{
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0rem;
+    }
+
+    .services-form-container button {
+        width: 100%;
+    }
 }
 
 .services-submit-button {
