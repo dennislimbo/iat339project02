@@ -1020,11 +1020,15 @@ nav ul ul li {
 }
 
 .services-assembly-info {
+    max-width: 60rem;
     margin-bottom: 2rem;
 }
 
 .services-list {
-    list-style-type: none;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 textarea {
