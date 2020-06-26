@@ -70,6 +70,13 @@ a {
     top: 2em;
 }
 
+@media screen and (max-width: 375px) {
+    .sticky {
+        position: static;
+        top: auto;
+    }
+}
+
 .filters button, .shipping-information button, .vertical-order-summary button, .shipping-method button{
     color: #FFFFFF;
     background-color: #709775;
@@ -310,6 +317,7 @@ nav ul ul li {
 
 .cart-item .price {
     line-height: 17px;
+    text-align: right;
 }
 
 .cart-item .remove, .cart-item .modify, .cart-item i {
