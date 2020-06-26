@@ -92,7 +92,6 @@
 	display: inline;
 }
 
-/*remove this if unused */
 .col-one {
     flex: 1 1 auto;
 }
@@ -183,6 +182,38 @@
 
     .cart-container .col-two {
         margin-right: 10em;
+    }
+
+    /* Address Info Page */
+    
+    .shipping-billing-form form {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: -webkit-flex;
+        flex-wrap: -ms-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .shipping-billing-form form .double label {
+        max-width: 7em;
+        max-height: 1.8em;
+    }
+
+    .shipping-billing-form form .double input {
+        max-width: 15em;
+        max-height: 1.8em;
+    }
+
+    .shipping-billing-form form .row {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: -webkit-flex;
+        flex-wrap: -ms-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
     /* Payment page */

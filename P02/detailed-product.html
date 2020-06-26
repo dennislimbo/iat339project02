@@ -14,40 +14,35 @@
 	</head>
 
 	<body>
-		<!-- New Nav Bar Section W3C -->
-		<nav class="navigation" id="myNav">
-			<a href="index.html" class="logo">zen keebs</a>
-			<a href="index.html" class="active">home</a>
-			<a href="about-us.html">about</a>
-			<div class="dropdown">
-				<button class="dropbtn">shop
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="product-listings.html">all products</a>
-					<a href="product-listings.html">new arrivals</a>
-					<a href="product-listings.html">keyboards</a>
-					<a href="product-listings.html">accessories</a>
-					<a href="product-listings.html">plates</a>
-					<a href="product-listings.html">switches</a>
-					<a href="product-listings.html">keycaps</a>
-				</div>
-			</div>
-			<a href="services.html">services</a>
-			<a class="button" href="account.html"><i class="far fa-user-circle"></i></a>
-			<a class="button" href="cart.html"><i class="fas fa-shopping-cart"></i> </a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		<!-- Navigation -->
+		<nav>
+			<div class="medium" id="logo">zen keebs </div>
+
+			<label for="drop" class="toggle">Menu</label>
+			<input type="checkbox" id="drop">
+				<ul class="menu">
+					<li><a href="index.html">home</a></li>
+					<li><a href="about-us.html">about</a></li>
+					<!-- Drop down-->
+					<li>
+						<label for="drop-1" class="toggle">shop<i class="fas fa-angle-down"></i></label>
+						<a href="#">shop <i class="fas fa-angle-down"></i></a>
+						<input type="checkbox" id="drop-1">
+						<ul>
+							<li><a href="product-listings.html">all products</a></li>
+							<li><a href="product-listings.html">new arrivals</a></li>
+							<li><a href="product-listings.html">keyboards</a></li>
+							<li><a href="product-listings.html">accessories</a></li>
+							<li><a href="product-listings.html">plates</a></li>
+							<li><a href="product-listings.html">switches</a></li>
+							<li><a href="product-listings.html">keycaps</a></li>
+						</ul>
+					</li>
+					<li><a href="services.html">services</a></li>
+					<li><a class="button" href="account.html"><i class="far fa-user-circle"></i></a></li>
+					<li><a class="button" href="cart.html"><i class="fas fa-shopping-cart"></i> </a></li>
+				</ul>
 		</nav>
-		<script>
-			function myFunction() {
-			  var x = document.getElementById("myNav");
-			  if (x.className === "navigation" || x.className ==="search") {
-				x.className += " responsive";
-			  } else {
-				x.className = "navigation";
-			  }
-			}
-        </script>
 		
 		<!--  Wayfinding-->
 		<div class="wayfinding">

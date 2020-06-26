@@ -13,7 +13,35 @@
 	</head>
 
 	<body>
-		<!-- Nav Bar Section-->
+		<!-- Navigation -->
+		<nav>
+			<div class="medium" id="logo">zen keebs </div>
+
+			<label for="drop" class="toggle">Menu</label>
+			<input type="checkbox" id="drop">
+				<ul class="menu">
+					<li><a href="index.html">home</a></li>
+					<li><a href="about-us.html">about</a></li>
+					<!-- Drop down-->
+					<li>
+						<label for="drop-1" class="toggle">shop<i class="fas fa-angle-down"></i></label>
+						<a href="#">shop <i class="fas fa-angle-down"></i></a>
+						<input type="checkbox" id="drop-1">
+						<ul>
+							<li><a href="product-listings.html">all products</a></li>
+							<li><a href="product-listings.html">new arrivals</a></li>
+							<li><a href="product-listings.html">keyboards</a></li>
+							<li><a href="product-listings.html">accessories</a></li>
+							<li><a href="product-listings.html">plates</a></li>
+							<li><a href="product-listings.html">switches</a></li>
+							<li><a href="product-listings.html">keycaps</a></li>
+						</ul>
+					</li>
+					<li><a href="services.html">services</a></li>
+					<li><a class="button" href="account.html"><i class="far fa-user-circle"></i></a></li>
+					<li><a class="button" href="cart.html"><i class="fas fa-shopping-cart"></i> </a></li>
+				</ul>
+		</nav>
         
         <!-- Wayfinding/Breadcrumb-->
 		<div class="wayfinding">
@@ -92,7 +120,7 @@
 						<p class="total-price">$75.00</p>
 					</div>
 				</div>
-				<button class="checkout-btn" type="button">Check out</button>
+				<a href="shipping-info.html"><button class="checkout-btn" type="button">Check out</button></a>
 				</div>
 			</div>
 		</div>

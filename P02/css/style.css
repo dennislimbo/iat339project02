@@ -12,6 +12,27 @@ html {
     line-height: 2rem;
 }
 
+h1 {
+    text-align: center;
+    color: #1A281F;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #345F39;
+    font-size: 1.3rem;
+}
+
+h3 {
+    color: #709775;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+h4 {
+    color: #1A281F;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -58,180 +79,158 @@ a {
     padding-right: .25em;
     box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.25);
 }
-/* New Nav Styling*/
+
+/* Nav Styling*/
 
 nav {
     background-color: #709775;
-    overflow: hidden;
 }
 
-nav a, .navigation form, nav .button {
-    float: left;
+#logo {
     display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:30px;
+    line-height: 60px;
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+}
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+}
+
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+    float: left;
+    z-index: 1000000;
+}
+
+nav a {
+	display:block;
+	padding:14px 20px;	
+    color: #f2f2f2;
     font-size: 1.2em;
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-h1 {
-    text-align: center;
-    color: #1A281F;
-    font-size: 2rem;
-}
-
-h2 {
-    color: #345F39;
-    font-size: 1.3rem;
-}
-
-h3 {
-    color: #709775;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-h4 {
-    color: #1A281F;
-}
-
-.menu, .submenu {
-    list-style-type: none;
-}
-
-nav a, nav .button {
+    background-color: #709775;
+	font-size:17px;
+    text-decoration:none;
     border-bottom: 0.25em solid transparent;
 }
 
-.dropdown a, nav .button {
-    margin-left: 0;
-    margin-right: 0;
+.toggle, [id^=drop] {
+	display: none;
 }
 
-nav .logo {
-    margin-left: 1em;
-    margin-right: 10em;
-}
-
-.navigation label, .navigation input {
-    display: inline;
-}    
-
-.navigation .search {
-    padding: 0;
-}
-
-nav .icon {
-    display: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 1.2em;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-nav a:hover, .dropdown .dropbtn:hover {
+nav a:hover, nav a:focus {
     border-bottom: 0.25em solid #345F39;
     color: white;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; 
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+nav ul li:hover > ul {
+	display:inherit;
 }
 
-nav .search .textfield {
-    color: #FFFFFF;
-    background-color: #709775;
-    border: none;
-    border-bottom: 1px solid #FFFFFF;
-    box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.25);
-}
-
-nav .nav-button {
-    color: #FFFFFF;
-    background-color: #709775;
-    border: 1px solid #FFFFFF;
-    border-radius: 28px;
-    padding-left: .25em;
-    padding-right: .25em;
-    box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.25);
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
 }
 
 @media screen and (max-width: 375px) {
-    nav .logo, nav a, .navigation form, nav .button {
-        margin: auto 0;
+    #logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
     }
     
+    nav {
+		margin: 0;
+    }
+    
+    .toggle + a, .menu {
+		display: none;
+    }
+    
+    .toggle {
+		display: block;
+		background-color: #709775;
+		padding:14px 20px;	
+		color: #f2f2f2;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    }
+    
+    .toggle:hover {
+		border-bottom: 0.25em solid #345F39;
+        color: white;
+    }
+    
+    [id^=drop]:checked + ul {
+		display: block;
+    }
+    
+    nav ul li {
+		display: block;
+		width: 100%;
+    }
+    
+    nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+    
+    nav a:hover {
+		border-bottom: 0.25em solid #345F39;
+        color: white;
+    }
+    
+    nav ul li ul li .toggle,
+	nav ul ul a {
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+    }
+    
+    nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #345F39; 
+    }
+    
+    nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+    }
 
-    nav a:not(:first-child), .dropdown .dropbtn, .nav-icons a:first-child, nav .search {
-        display: none;
-    }
-    nav a.icon {
-        float: right;
-        display: block;
+    nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
     }
 
-    nav.responsive {
-        position: relative;
-    }
-    nav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    nav.responsive a, nav.responsive .search {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    nav.responsive .dropdown {
-        float: none;
-    }
-    nav.responsive .dropdown-content {
-        position: relative;
-    }
-    nav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
+    nav ul ul li {
+		display: block;
+		width: 100%;
+	}
 }
 
 /* Wayfinding Styling */
@@ -519,40 +518,19 @@ nav .nav-button {
 }
 
 /* Address Information Page Styling */
+.shipping-billing h1{
+    text-align: left;
+}
 
 .shipping-billing-form {
     margin-left: 11.3125em;
+    margin-right: 11.3125em;
     padding-bottom: 3em;
-}
-
-.shipping-information .shipping-billing-form div{
-    margin: .5em 0;
-}
-
-.shipping-information .shipping-billing-form label {
-    font-size: .8em;
-    width: 50%;
-}
-
-.shipping-information .col-two {
-    max-width: 500px;
 }
 
 /* Address Form Styling */
 .shipping-information h2 {
-    margin-top: 1em;
-}
-
-.shipping-information .inline-form {
-    display: inline-block;
-}
-
-.shipping-information .block-form input {
-    width: 27em;
-}
-
-.shipping-information label:not(.address-checkbox) {
-    display: block;
+    margin-top: .5em;
 }
 
 .shipping-information button, .vertical-order-summary button {
@@ -573,7 +551,7 @@ nav .nav-button {
 
 @media screen and (max-width:375px) {
     .shipping-billing-form {
-        margin-left: 4em;
+        margin-left: 2em;
     }
     
     .shipping-information .block-form input {
@@ -589,9 +567,12 @@ nav .nav-button {
 /* Shipping Method */
 
 .shipping-method .selection-form {
-    margin-left: 11.3125em;
+    margin-left: 15em;
 }
 
+.shipping-method h1 {
+    text-align: left;
+}
 @media screen and (max-width:375px) {
     .shipping-method .selection-form {
         margin-left: .5em;
