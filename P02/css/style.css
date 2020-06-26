@@ -942,6 +942,10 @@ nav ul ul li {
     }
 }
 
+.home-body-item .home-icon {
+    text-align: center;
+}
+
 /*DETAILED PRODUCT SECTION */
 .detailed-product-container {
     background-color: white;
