@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Zen Keebs - New Arrivals</title>
+
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome/css/all.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<div class="medium" id="logo">zen keebs </div>
+
+			<label for="drop" class="toggle">Menu</label>
+			<input type="checkbox" id="drop">
+				<ul class="menu">
+					<li><a href="index.html">home</a></li>
+					<li><a href="about-us.html">about</a></li>
+					<!-- Drop down-->
+					<li>
+						<label for="drop-1" class="toggle">shop<i class="fas fa-angle-down"></i></label>
+						<a href="#">shop <i class="fas fa-angle-down"></i></a>
+						<input type="checkbox" id="drop-1">
+						<ul>
+							<li><a href="product-listings.html">all products</a></li>
+							<li><a href="product-listings.html">new arrivals</a></li>
+							<li><a href="product-listings.html">keyboards</a></li>
+							<li><a href="product-listings.html">accessories</a></li>
+							<li><a href="product-listings.html">plates</a></li>
+							<li><a href="product-listings.html">switches</a></li>
+							<li><a href="product-listings.html">keycaps</a></li>
+						</ul>
+					</li>
+					<li><a href="services.html">services</a></li>
+					<li><a class="button" href="account.html"><i class="far fa-user-circle"></i></a></li>
+					<li><a class="button" href="cart.html"><i class="fas fa-shopping-cart"></i> </a></li>
+				</ul>
+		</nav>
+		
+		<!-- Banner Image -->
+        <div class="home-hero-image">
+            <img src="img/hero_image_resized.png" class="hero-image responsive-img" alt="Keyboard banner image" class="responsive-img">
+        <!--
+        <div class="home-advertise-item">
+            <h1 class="page-header hero-header">Mechanical Keyboard 2020 Edition</p>
+            <button class="button-style">Buy Now</button>
+        </div>
+        -->
+        </div>
+
+        <!-- Main Content-->
+        <section class="container product-listings">
+            <!-- Filters Section-->
+			<section class="col-one filters">
+				<div class="sticky">
+					<h2 class="semibold">Categories</h2>
+					<form action="#">
+						<input type="checkbox" id="filter1" name="filter1" value="keyboards">
+						<label class="normal" for="filter1">Keyboards</label><br>
+						<input type="checkbox" id="filter2" name="filter2" value="accessories">
+						<label for="filter2">Accessories</label><br>
+						<input type="checkbox" id="filter3" name="filter3" value="plates">
+						<label for="filter3">Plates</label><br>
+						<input type="checkbox" id="filter4" name="filter4" value="switches">
+						<label for="filter4">Switches</label><br>
+						<input type="checkbox" id="filter5" name="filter5" value="keycaps">
+						<label for="filter5">Key Caps</label><br>
+						<input class="button" type="submit" value="Submit">
+					</form>
+					<h3 class="normal">Keyboards</h3>
+					<h3 class="normal">Accessories</h3>
+					<h3 class="normal">Plates</h3>
+					<h3 class="normal">Switches</h3>
+					<h3 class="normal">KeyCaps</h3>
+					<button class="button" type="button">Apply</button>
+				</div>
+			</section>
+
+			<!-- Display Section -->
+			<section class="col-three display">
+				<!-- Wayfinding/Breadcrumb-->
+				<div class="wayfinding">
+					<a class="wayfinding-item home" href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Home</a>
+					<a class="wayfinding-item current" href="product-listings.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Switches</a>
+				</div>
+				<h1 class="normal">Switches</h1>
+				<!-- Product Listings Three Column Grid-->
+				<div class="sub-container">
+					<div class="col-one">
+						<div class="listings-item">
+							<a href="detailed-product.html"><img src="img/switches/roselios-233.png" alt="Roselios Switches"></a>
+							<p class="name">ZealPC Roselios (62g)</p>
+							<p class="price">$12.00 / pack of 10</p>
+						</div>
+					</div>
+					<div class="col-one">
+                        <div class="listings-item">
+							<a href="detailed-product.html"><img src="img/switches/zealios-233.png" alt="Zealios Switches"></a>
+							<p class="name">Purple Zealios V2 Switches (62g, 65g, 67g, 78g) </p>
+							<p class="price">$10.00 / pack of 10</p>
+						</div>
+					</div>
+					<div class="col-one">
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- Start of Footer -->
+		<footer>
+			<div class="footer-container">
+				<div class="footer-box">
+					<p class="footer-site-name">zenkeebs</p>
+					<ul class="footer-menu">
+						<li>© 2010 — 2020</li>
+					</ul>
+				</div>
+				<div class="footer-box">
+
+					<ul class="footer-menu">
+						<li class="footer-header">shop</li>
+						<li><a href="product-listings.html" class="footer-menu-item">all products</a></li>
+						<li><a href="product-listings.html" class="footer-menu-item">new arrivals</a></li>
+						<li><a href="product-listings.html" class="footer-menu-item">keyboards</a></li>
+						<li><a href="product-listings.html" class="footer-menu-item">accesories</a></li>
+						<li><a href="product-listings.html" class="footer-menu-item">plates</a></li>
+						<li><a href="product-listings.html" class="footer-menu-item">switches</a></li>
+						<li><a href="product-listings.html" class="footer-menu-item">keycaps</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-box">
+					<ul class="footer-menu">
+						<li class="footer-header">menu</li>
+						<li><a href="" class="footer-menu-item">home</a></li>
+						<li><a href="" class="footer-menu-item">about</a></li>
+						<li><a href="" class="footer-menu-item">shop</a></li>
+						<li><a href="" class="footer-menu-item">services</a></li>
+						<li><a href="" class="footer-menu-item">profile</a></li>
+						<li><a href="" class="footer-menu-item">cart</a></li>
+					</ul>				
+
+				</div>
+				<div class="footer-box">
+					<!--Email and Address-->
+					<p class="footer-header">contact</p>
+					<p class="footer-body-text">
+						<ul class="footer-menu">
+							<li>email: help@zenkeebs.com</li>
+							<li>call: 1.800.123.1234</li>
+						<ul>
+
+					</p>
+					<p class="footer-body-text">
+						<ul class="footer-menu">
+							<li>1234 Fake Street</li>
+							<li>Surrey, BC B4K 619</li>
+							<li>Canada</li>
+						</ul>
+					</p>
+				</div>
+				<div class="footer-box">
+					<!--Social Media Links-->
+					<p class="footer-header">social media</p>
+					<ul class="footer-menu footer-social-media">
+						<li><a href="https://www.facebook.com/"><i class="fab fa-2x fa-facebook social-media-icons"></i></a></li>
+						<li><a href="https://www.instagram.com"><i class="fab fa-2x fa-instagram social-media-icons"></i></a></li>
+						<li><a href="https://www.twitter.com"><i class="fab fa-2x fa-twitter social-media-icons"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer> <!-- End of Footer -->
+	</body>
+</html>
