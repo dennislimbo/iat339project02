@@ -422,19 +422,6 @@ nav ul ul li {
     }
 }
 
-/* Multiple Product Listings Styling */
-
-.banner-image-placeholder {
-    width: 100%;
-    height: 240px;
-    background-color: #C4C4C4;
-}
-
-.product-listings h1 {
-    margin-left: 2.23em;
-    text-align: left;
-}
-
 /* Filters Section */
 
 .filters {
@@ -475,28 +462,47 @@ nav ul ul li {
     transition: linear;
 }
 
-/* Listings Section */
+/* Multiple Product Listings Styling */
 
-.listings-item {
-    position: relative;
-    height: 17.25em;
-    margin-bottom: 6.87em;
+.banner-image-placeholder {
+    width: 100%;
+    height: 240px;
+    background-color: #C4C4C4;
 }
 
-.listings-item .name, .listings-item .price {
-    position: absolute;
-    top: 254px;
+.product-listings h1 {
+    margin-left: 2.23em;
+    font-weight: 700;
+    text-align: left;
 }
 
-.listings-item .price {
-    left: 191px;
-}
 
 .listing-image-placeholder {
     width: 233px;
     height: 233px;
     background: #C4C4C4;
 }
+
+.product-listings .flex-col .thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-listings .flex-col p {
+    text-align: center;
+}
+
+
+.image {
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.product-listings .flex-col .thumbnail:hover .image {
+    opacity: .5;
+}
+
 
 @media screen and (max-width: 375px) {
     .product-listings h1 {
@@ -515,12 +521,6 @@ nav ul ul li {
 
     .filters h3, .filters h2 {
         margin-left: 1em;
-    }
-
-    .filters .button {
-        padding: .75em 1em;
-        margin-left: 1.5em;
-        float: left;
     }
 }
 

@@ -154,6 +154,26 @@
         flex-direction: row;
     }
 
+    .flex-col {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: -webkit-flex;
+        flex-wrap: -ms-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Product Listings */
+
+    .flex-col {
+        margin-bottom: 3em;
+    }
+
+    .product-listings .flex-col img, .product-listings .flex-col p {
+        margin-bottom: .3em;
+    }
+
     /* Account Page Styling */
 
     .account-summary {
