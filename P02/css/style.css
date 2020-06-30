@@ -70,7 +70,7 @@ a {
     top: 2em;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .sticky {
         position: static;
         top: auto;
@@ -159,7 +159,7 @@ nav ul ul li {
 	position: relative;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     #logo {
 		display: block;
 		padding: 0;
@@ -268,7 +268,7 @@ nav ul ul li {
     transition: ease-in-out;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .wayfinding {
         padding-left: 1em;
         margin-left: auto;
@@ -354,7 +354,7 @@ nav ul ul li {
     background: #1A281F;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     /* Cart Module Styling */
 
     .cart-container {
@@ -428,21 +428,6 @@ nav ul ul li {
     border-right: 1px solid #828282;
 }
 
-.filters form { /* Still testing out some form stuff */
-    display: none;
-}
-
-.filters form label {
-    font-size: 1.5em;
-    margin: 1em;
-}
-
-.filters .button {
-    padding: .75em 1em;
-    margin-right: 1.5em;
-    float: right;
-}
-
 .filters h2, .filters h3 {
     text-align: right;
     margin-right: 1.5em;
@@ -453,13 +438,13 @@ nav ul ul li {
 }
 
 .filters h3 {
+    font-size: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 .filters h3:hover, .filters h3:active, .filters h3:focus {
     text-decoration: underline;
-    transition: linear;
 }
 
 /* Multiple Product Listings Styling */
@@ -504,7 +489,7 @@ nav ul ul li {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .product-listings h1 {
         text-align: center;
         margin-left: 0;
@@ -530,8 +515,8 @@ nav ul ul li {
 }
 
 .shipping-billing-form {
-    margin-left: 11.3125em;
-    margin-right: 11.3125em;
+    margin-left: 9.3125em;
+    margin-right: 2em;
     padding-bottom: 3em;
 }
 
@@ -556,7 +541,7 @@ nav ul ul li {
     padding: 3em;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:480px) {
     .shipping-billing-form {
         margin-left: 2em;
     }
@@ -580,7 +565,7 @@ nav ul ul li {
 .shipping-method h1 {
     text-align: left;
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:480px) {
     .shipping-method .selection-form {
         margin-left: .5em;
         margin-right: .5em;
@@ -660,16 +645,16 @@ nav ul ul li {
 
 #account-header {
     text-align: center;
-    font-size: 2.25em;
+    font-size: 2em;
 }
 
 .orders h2 {
     text-align: left;
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 .account-summary .order-item p {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .account-summary .order-item a {
@@ -713,7 +698,7 @@ nav ul ul li {
 }
 
 .account-summary .user-info p {
-    font-size: 1.4375em;
+    font-size: 1em;
 }
 
 .account-summary button {
@@ -733,7 +718,7 @@ nav ul ul li {
     background: #1A281F;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     #account-header {
         text-align: left;
     }
@@ -773,29 +758,7 @@ nav ul ul li {
 }
 
 .order-confirmation-module .order-item {
-    position: relative;
     margin-bottom: 1em;
-}
-
-.order-confirmation-module .item-name, .order-confirmation-module .item-details, .order-confirmation-module .order-image-placeholder {
-    position: relative;
-}
-
-.order-confirmation-module .order-image-placeholder {
-    left: 0px;
-    width: 128px;
-    height: 128px;
-    background: #979797;
-}
-
-.order-confirmation-module .item-name {
-    top: -128px;
-    left: 152px;
-}
-
-.order-confirmation-module .item-details {
-    top: -64px;
-    left: 152px;
 }
 
 .order-confirmation-module .return-button {
@@ -818,7 +781,7 @@ nav ul ul li {
     color: #1A281F;
 }
 
-@media screen and (max-width: 1366px) and (min-width: 375px) {
+@media screen and (max-width: 1366px) and (min-width: 481px) {
     .order-confirmation-module {
         padding: 0 8.5em;
         padding-bottom: 4em;
@@ -829,7 +792,7 @@ nav ul ul li {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .order-confirmation-module {
         margin: 0;
         padding: 0 5em;
@@ -882,7 +845,7 @@ nav ul ul li {
     min-height: 100%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .home-hero-image {
         min-height: 50%;
     }
@@ -906,7 +869,7 @@ nav ul ul li {
     cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .page-header hero-header {
         font-size: 1rem;
     }
@@ -935,7 +898,7 @@ nav ul ul li {
     margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .about-body-content {
         margin: 0.5rem;
     }
@@ -1036,7 +999,7 @@ textarea {
     padding: 0.5rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .services-form-container{
         width: 100%;
         margin-top: 2rem;
@@ -1115,14 +1078,14 @@ input[type=text]:focus, textarea {
     margin: 1rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .footer-box {
         margin: 0rem;
         margin-bottom: 2rem;
     }
 }
 
-@media screen and (max-width: 1366px) and (min-width: 375px) {
+@media screen and (max-width: 1366px) and (min-width: 480px) {
     .footer-box {
         margin: 0rem 1rem;
     }
@@ -1135,15 +1098,15 @@ input[type=text]:focus, textarea {
 /* User Info Styling */
 
 .account-summary .user-info h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .account-summary .user-info p {
-    font-size: 1.4375em;
+    font-size: 1.2em;
 }
 
 .account-summary .user-info .name {
-    margin-bottom: 3.375em;
+    margin-bottom: 2em;
 }
 
 .account-summary .user-info .country {
