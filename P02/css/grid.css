@@ -17,6 +17,11 @@
     justify-content: center;
 }
 
+.about-team-grid-container {
+	display: flex;
+	flex-direction: row;
+}
+
 /* DETAILED PRODUCT SECTION */
 @media screen and (max-width: 480px) {
 	.responsive-img {
@@ -97,6 +102,12 @@
 }
 
 /* CONTACT US SECTION */
+.contact-us-info-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .contact-us-body-container {
 	display: flex;
 	justify-content: center;
