@@ -944,12 +944,23 @@ nav ul ul li {
 }
 
 /* ABOUT SECTION */
+.about-body-content h2{
+    text-align: center;
+}
+
+.about-body-content p{
+    margin-bottom: 2rem;
+}
+
 .about-body-content {
-    max-width: 50rem;
-    background-color: #709775;
-    margin-top: -3rem;
+    max-width: 80rem;
+    background-color: #C4D4C6;
     padding: 2rem;
     margin-bottom: 3rem;
+}
+
+.team-grid-col {
+    margin: 2rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -1027,7 +1038,7 @@ nav ul ul li {
 
 .services-body-item {
     max-width: 50rem;
-    background-color: #709775;
+    background-color: #C4D4C6;
     padding: 2rem;
 }
 
@@ -1050,6 +1061,7 @@ nav ul ul li {
 
 textarea {
     resize: none;
+    max-width: 100%;
     padding: 0.5rem;
 }
 
@@ -1063,6 +1075,16 @@ textarea {
     .services-form-container button {
         width: 100%;
     }
+
+    .contact-form-container{
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0rem;
+    }
+
+    .contact-form-container button {
+        width: 100%;
+    }
 }
 
 .services-submit-button {
@@ -1070,9 +1092,10 @@ textarea {
 }
 
 /* CONTACT US SECTION */
+
 input[type=text] {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.2rem 0.5rem;
     margin-bottom: 0.3rem;
 }
 
@@ -1080,8 +1103,17 @@ input[type=text]:focus, textarea {
     outline: 0.1rem solid #709775;
 }
 
-.contact-us-body-container {
-    margin: 3rem 0rem;
+.contact-us-info-container {
+    margin: 2rem;
+}
+
+.contact-info-body {
+    background-color: #C4D4C6;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 50rem;
 }
 
 /*can merge these styles to reduce clutter*/
