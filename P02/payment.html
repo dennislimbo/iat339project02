@@ -13,6 +13,8 @@
 	</head>
 
 	<body>
+		<!-- Skip link -->
+		<a class="skip-to-main"  href="#main"> Skip to content</a>
 		<!-- Wayfinding/Breadcrumb-->
 		<div class="wayfinding wayfinding-payment">
 			<a class="wayfinding-item home" href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Home</a>
@@ -23,32 +25,16 @@
 		</div>
 
 		<!-- Main Content -->
-		<section class="container payment">
+		<section id="main" class="container payment">
 			<!-- Payment Method Module-->
 			<section class="col-one">
 				<div class="sticky">
 					<h1 class="medium">zen keebs</h1>
 					<h2 class="medium payment-header">Payment Methods</h2>
 					<!-- Payment Form -->
-					<form action="#" class="payment-outter">
-						<div class="row radio">
-							<p>Card Type</p>
-							<div>
-								<input class="col-one" type="radio" id="visa">
-								<label class="icon col-one" for="visa"><i class="fab fa-cc-visa fa-3x"></i></label>
-							</div>
-							<div>
-								<input class="col-one" type="radio" id="master">
-								<label class="icon col-one" for="master"><i class="fab fa-cc-mastercard fa-3x"></i></label>
-							</div>
-							<div>
-								<input class="col-one" type="radio" id="apple">
-								<label class="icon col-one" for="apple"><i class="fab fa-cc-apple-pay fa-3x"></i></label>
-							</div>
-							<div>
-								<input class="col-one" type="radio" id="paypal">
-								<label class="icon col-one" for="paypal"><i class="fab fa-cc-paypal fa-3x"></i></label>
-							</div>
+					<form action="order-confirm.html" class="payment-outter">
+						<div class="row">
+							<p><i class="fab fa-cc-visa fa-2x"></i> <i class="fab fa-cc-mastercard fa-2x"></i> <i class="fab fa-cc-apple-pay fa-2x"></i> <i class="fab fa-cc-paypal fa-2x"></i> </p>
 						</div>
 						<div class="row long-field">
 							<label class="col-one" for="card-name">Cardholder Name (as it appears on card)</label>
@@ -71,7 +57,7 @@
 								<a href="shipping-method.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Return to Shipping Methods</a>
 							</div>
 							<div class="col-one">
-								<a class="button" href="order-confirm.html"><button class="button-style" type="button">Confirm</button></a>
+								<button type="submit" class="checkout-btn button-style">Confirm Payment</button>
 							</div>
 						</div>
 					</form>
@@ -125,7 +111,7 @@
 				<div class="order-price-summary medium">
 					<div class="col-three">
 						<h3 class="medium subtotal">Subtotal</h3>
-						<h3 class="medium est-shipping">Estimated Shipping & Handling</h3>
+						<h3 class="medium est-shipping">Shipping & Handling</h3>
 						<h3 class="medium taxes">Taxes</h3>
 						<h3 class="medium myTotal">Total</h3>
 					</div>

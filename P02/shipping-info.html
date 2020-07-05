@@ -13,6 +13,8 @@
 	</head>
 
 	<body>
+		<!-- Skip link -->
+		<a class="skip-to-main"  href="#main"> Skip to content</a>
 		<!-- Wayfinding/Breadcrumb-->
 		<div class="wayfinding">
 			<a class="wayfinding-item home" href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Home</a>
@@ -25,9 +27,9 @@
 		<section class="container shipping-information">
 			<!-- Shipping Billing Module-->
 			<section class="shipping-billing col-one">
-				<div class="shipping-billing-form">
+				<div id="main" class="sticky shipping-billing-form">
 					<h1 class="normal">zen keebs</h1>
-					<form action="#">
+					<form action="shipping-method.html">
 						
 						<!--Shipping Address -->
 						<h2 class="normal">Shipping Address</h2>
@@ -35,7 +37,7 @@
 							<label for="first-name">First Name</label>
 							<input type="text" name="first-name" id="first-name">
 							<label for="last-name">Last Name</label>
-							<input type="text" name="first-name" id="first-name">
+							<input type="text" name="last-name" id="last-name">
 						</div>
 						<div class="row long-field">
 							<label for="email">E-mail</label>
@@ -73,58 +75,13 @@
 							<label for="zip-postal">Zip/Postal Code</label>
 							<input type="text" name="zip-postal" id="zip-postal">
 						</div>
-						<div>
-							<input class="address-checkbox" type="checkbox" name="same" id="same" value="same">
-							<label class="address-checkbox"for="same">Billing address the same as shipping</label>
-						</div>
-						
-						<!--Billing Address -->
-						<h2 class="normal">Billing Address</h2>
-						<div class="row short-field"> 
-							<label for="first-name-b">First Name</label>
-							<input type="text" name="first-name-b" id="first-name-b">
-							<label for="last-name">Last Name</label>
-							<input type="text" name="first-name-b" id="first-name-b">
-						</div>
-						<div class="row long-field">
-							<label for="email-b">E-mail</label>
-							<input type="text" name="email-b" id="email-b">
-						</div>
-						<div class="row long-field">
-							<label for="phone-b">Phone Number</label>
-							<input type="text" name="phone-b" id="phone-b">
-						</div>
-						<div class="row long-field">
-							<label for="address-b">Street Address</label>
-							<input type="text" name="address-b" id="address-b">
-						</div>
-						<div class="row long-field">
-							<label for="address-two-b">Address Line 2</label>
-							<input type="text" name="address-two-b" id="address-two-b">
-						</div>
-						<div class="row long-field">
-							<label for="city-b">City</label>
-							<input type="text" name="city-b" id="city-b">
-						</div>
-						<div class="row long-field">
-							<label for="state-province-b">State / Province</label>
-							<input type="text" name="state-province-b" id="state-province-b">
-						</div>
-						<div class="row short-field">
-							<label for="country-b">Country</label>
-							<input list="countries" name="country-b" id="country-b">
-							<datalist id="countries">
-								<option value="Canada">Canada</option>
-								<option value="United States">United States</option>
-								<option value="Russia">Russia</option>
-								<option value="China">China</option>
-							</datalist>
-							<label for="zip-postal-b">Zip/Postal Code</label>
-							<input type="text" name="zip-postal-b" id="zip-postal-b">
-						</div>
-						<div class="submission">
-							<a href="cart.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Return to Cart</a>
-							<a href="shipping-method.html"><button class="shipping-billing-form-btn button-style" type="button">Continue to Shipping Method</button></a>
+						<div class="row submission">
+							<div class="col-two">
+								<a href="cart.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Return to Cart</a>
+							</div>
+							<div class="col-one">
+								<button class="checkout-btn button-style" type="submit">Continue to Shipping Method</button>
+							</div>
 						</div>
 					</form>
 				</div>

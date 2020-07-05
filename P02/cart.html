@@ -13,6 +13,8 @@
 	</head>
 
 	<body>
+		<!-- Skip link -->
+		<a class="skip-to-main"  href="#main"> Skip to content</a>
 		<!-- Navigation -->
 		<nav>
 			<div class="medium" id="logo"><i class="far fa-keyboard"></i> zen keebs</div>
@@ -37,8 +39,8 @@
 					</li>
 					<li><a href="services.html">services</a></li>
 					<li><a href="contact-us.html">contact us</a></li>
-					<li><a class="button" href="account.html"><i class="far fa-user-circle"></i></a></li>
-					<li><a class="button" href="cart.html"><i class="fas fa-shopping-cart"></i> </a></li>
+					<li><a aria-label="account" class="button" href="account.html"><i class="far fa-user-circle"></i></a></li>
+					<li><a aria-label="cart" class="button" href="cart.html"><i class="fas fa-shopping-cart"></i> </a></li>
 				</ul>
 		</nav>
         
@@ -52,7 +54,7 @@
 		</div>
 
 		<!-- Horizontal Order Summary Module -->
-		<div class="cart-container">
+		<div id="main" class="cart-container">
 			
 			<!-- Cart information-->
 			<div class="horizontal-order-summary col-two">
@@ -119,7 +121,7 @@
 						<p class="total-price">$681.99</p>
 					</div>
 				</div>
-				<a href="shipping-info.html"><button class="checkout-btn button-style" type="button">Check out</button></a>
+				<a class="checkout-btn button-style" href="shipping-info.html">Check out</a>
 				</div>
 			</div>
 		</div>

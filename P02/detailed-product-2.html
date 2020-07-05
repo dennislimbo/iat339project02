@@ -14,6 +14,8 @@
 	</head>
 
 	<body>
+		<!-- Skip link -->
+		<a class="skip-to-main"  href="#main"> Skip to content</a>
 		<!-- Navigation -->
 		<nav>
 			<div class="medium" id="logo"><i class="far fa-keyboard"></i> zen keebs</div>
@@ -38,10 +40,10 @@
 					</li>
 					<li><a href="services.html">services</a></li>
 					<li><a href="contact-us.html">contact us</a></li>
-					<li><a class="button" href="account.html"><i class="far fa-user-circle"></i></a></li>
-					<li><a class="button" href="cart.html"><i class="fas fa-shopping-cart"></i> </a></li>
+					<li><a aria-label="account" class="button" href="account.html"><i class="far fa-user-circle"></i></a></li>
+					<li><a aria-label="cart" class="button" href="cart.html"><i class="fas fa-shopping-cart"></i> </a></li>
 				</ul>
-			</nav>
+		</nav>
 		
 		<!--  Wayfinding-->
 		<div class="wayfinding">
@@ -51,7 +53,7 @@
 			<a class="wayfinding-item current" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i>GMK Modern Dolch 2 Keycap Set</a>
 		</div>
 
-		<div class="detailed-product-container">
+		<div id="main" class="detailed-product-container">
 			<div class="detailed-product-image">
 				<div class="sticky">
 					<img src="img/keycaps/gmk_modo_500.png" alt="Photo of GMK Modo Dolch 2 Keycaps" class="responsive-img">
