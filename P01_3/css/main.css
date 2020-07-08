@@ -7,7 +7,7 @@ html {
 
 section {
 	margin-bottom: 0;
-	margin-top: 2rem;
+	margin-top: 0;
 	padding: 2rem;
 	border-bottom: 0.05rem solid black;
 }
@@ -31,6 +31,10 @@ h1 {
 	font-size: 1.5rem;
 }
 
+header + h1 {
+	text-align: left;
+}
+
 h2 {
 	color: #345F39;
 	font-size: 1.3rem;
@@ -45,7 +49,7 @@ h3 {
 h4 {
 	color: #1A281F;
 }
-/* Dennis added this styling to tackle the validation issue */
+/* Code that Dennis Added */
 
 .bold-subheader {
 	color: #1A281F;
@@ -57,6 +61,41 @@ h4 {
 	color: #709775;
 	font-size: 1rem;
 	font-weight: lighter;
+}
+
+.col-one, .col-two {
+	height: 14rem;
+	margin: 0.25rem;
+	background-color: #709775; 
+}
+
+.vertical-order-summary .col-one, .vertical-order-summary .col-two {
+	height: auto;
+	margin: none;
+	background-color: transparent;
+	flex-basis: 0px;
+}
+
+.vertical-order-summary {
+	width: 50%;
+	margin-left: 32px;
+	border-bottom: none;
+}
+
+.vertical-order-summary a:hover, .vertical-order-summary a:focus, .vertical-order-summary a:active {
+	background-color: transparent;
+}
+
+.vertical-order-summary .price, .subtotal-price, .est-shipping-price, .taxes-price, .total-price {
+	font-size: 1em;
+}
+
+.cart-item h2{
+	margin-top: .5em;
+}
+
+#grid-structure code + h4 {
+	margin-top: 4em;
 }
 
 /* Code that Rachel had originally*/
