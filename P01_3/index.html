@@ -243,33 +243,101 @@
 
 	<h4>7. Product Module</h4>
 	<section id="product-module">
-		<div class="grid-container">
-			<div class="keyboard-image">
-				<img src="img/keyboard_2.jpg" alt="Pink/Lavender/White keyboard">
+		<div id="main" class="detailed-product-container">
+			<div class="detailed-product-image">
+				<div class="sticky">
+					<img src="img/keycaps/keyboard_product.jpg" alt="Photo of pink & blue & lavender mechanical keyboard" class="responsive-img">
+
+					<img src="img/keycaps/keyboard_product_full_500.jpg" alt="Full size image of keyboard" class="responsive-img">
+				</div>
 			</div>
-			<div class="product-info">
-				<h3>fully assembled keyboards</h3>
-				<h2>Pink & Lavender Mechanical Keyboard</h2>
-				<h2 class="thin">$50</h2>
-				<p>Super dope keyboard. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis sed arcu vitae semper. Vestibulum ullamcorper turpis rutrum luctus fringilla. Cras id sem et augue scelerisque suscipit nec sed dolor. Phasellus nec nulla tincidunt, porta quam a, aliquam nulla.</p>
-				<button class="add-to-cart-button">add to cart</button>
+
+			<div class="detailed-product-description">
+				<div class="product-main-module">
+					<h3 class="product product-category">keycap sets</h3>
+					<h2 class="product product-name">SP SA BUBBLE Keycap Set</h2>
+					<h4 class="product product-price">$177</h4>
+					<p class="product product-description">Bubble is a lovely set using ROSE QUARTZ & SERENITY from 2016's Pantone Color of the Year. SA Bubble's soft and pastel pink and blue shades bring you the sweetness of love.</p>
+					<a href="cart.html"><button class="add-to-cart-button button-style">add to cart</button></a>
+				</div>
+
+				<div class="detailed-product-info">
+					<h2>Product Info:</h2>
+					<ul class="product-info-list">
+						<li>SA profile</li>
+						<li>1.5mm thick doubleshot ABS plastic</li>
+						<li>Designed by 🎐弥生ゃょぃ</li>
+						<li>Manufactured by Signature Plastics</li>
+						<li>Made in the United States</li>
+					</ul>
+
+					<h2>About Signature Plastics:</h2>
+					<p>Signature Plastics is an American manufacturer of keycaps specializing in injection moulding. Founded in 2001, Signature Plastics (SP) provides made-to-order keycaps for a variety of applications, including keycaps in the SA, DSA, and DCS profiles for the mechanical keyboard community. Their SA profile in particular has a vintage appearance reminiscent of typewriters. SP works primarily with ABS, but has also been known to produce some PBT keycaps (e.g. DSA Granite).</p>
+				</div>
+
+
+				<!-- https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-only-css-->	
+				<div class="product-reviews">
+					<div>
+						<input id="dropdown" type="checkbox">
+						<label for="dropdown" tabindex="1"><h2 class="dropdown-toggle">Comments & Reviews <i class="fas fa-angle-down"></i></h2></label>
+						<div class="dropdown-box">
+							<h3>John Doe</h3>
+							<p>Sick keycaps bro</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<h2 class="bold-subheader">SAMPLE CODE:</h2>
 		<code class="code-block">
-			&lt;div class=&quot;grid-container&quot;&gt;<br>
-			&lt;div class=&quot;keyboard-image&quot;&gt;<br>
-			&lt;img src=&quot;img/keyboard_2.jpg&quot; alt=&quot;Pink/Lavender/White keyboard&quot;&gt;<br>
+			&lt;div id=&quot;main&quot; class=&quot;detailed-product-container&quot;&gt;<br>
+			&lt;div class=&quot;detailed-product-image&quot;&gt;<br>
+				&lt;div class=&quot;sticky&quot;&gt;<br>
+					&lt;img src=&quot;img/keycaps/keyboard_product.jpg&quot; alt=&quot;Photo of pink &amp; blue &amp; lavender mechanical keyboard&quot; class=&quot;responsive-img&quot;&gt;<br>
+
+					&lt;img src=&quot;img/keycaps/keyboard_product_full_500.jpg&quot; alt=&quot;Full size image of keyboard&quot; class=&quot;responsive-img&quot;&gt;<br>
+				&lt;/div&gt;<br>
 			&lt;/div&gt;<br>
-			&lt;div class=&quot;product-info&quot;&gt;<br>
-			&lt;h3&gt;fully assembled keyboards&lt;/h3&gt;<br>
-			&lt;h2&gt;Pink &amp; Lavender Mechanical Keyboard&lt;/h2&gt;<br>
-			&lt;h4&gt;$50&lt;/h4&gt;<br>
-			&lt;p&gt;Super dope keyboard. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis sed arcu vitae semper. Vestibulum ullamcorper turpis rutrum luctus fringilla. Cras id sem et augue scelerisque suscipit nec sed dolor. Phasellus nec nulla tincidunt, porta quam a, aliquam nulla.&lt;/p&gt;<br>
-			&lt;button class=&quot;add-to-cart-button&quot;&gt;add to cart&lt;/button&gt;<br>
+
+			&lt;div class=&quot;detailed-product-description&quot;&gt;<br>
+				&lt;div class=&quot;product-main-module&quot;&gt;<br>
+					&lt;h3 class=&quot;product product-category&quot;&gt;keycap sets&lt;/h3&gt;<br>
+					&lt;h2 class=&quot;product product-name&quot;&gt;SP SA BUBBLE Keycap Set&lt;/h2&gt;<br>
+					&lt;h4 class=&quot;product product-price&quot;&gt;$177&lt;/h4&gt;<br>
+					&lt;p class=&quot;product product-description&quot;&gt;Bubble is a lovely set using ROSE QUARTZ &amp; SERENITY from 2016's Pantone Color of the Year. SA Bubble's soft and pastel pink and blue shades bring you the sweetness of love.&lt;/p&gt;<br>
+					&lt;a href=&quot;cart.html&quot;&gt;&lt;button class=&quot;add-to-cart-button button-style&quot;&gt;add to cart&lt;/button&gt;&lt;/a&gt;<br>
+				&lt;/div&gt;<br><br>
+				
+				&lt;div class=&quot;detailed-product-info&quot;&gt;<br>
+					&lt;h2&gt;Product Info:&lt;/h2&gt;<br>
+					&lt;ul class=&quot;product-info-list&quot;&gt;<br>
+						&lt;li&gt;SA profile&lt;/li&gt;<br>
+						&lt;li&gt;1.5mm thick doubleshot ABS plastic&lt;/li&gt;<br>
+						&lt;li&gt;Designed by 🎐弥生ゃょぃ&lt;/li&gt;<br>
+						&lt;li&gt;Manufactured by Signature Plastics&lt;/li&gt;<br>
+						&lt;li&gt;Made in the United States&lt;/li&gt;<br>
+					&lt;/ul&gt;<br><br>
+
+					&lt;h2&gt;About Signature Plastics:&lt;/h2&gt;<br>
+					&lt;p&gt;Signature Plastics is an American manufacturer of keycaps specializing in injection moulding. Founded in 2001, Signature Plastics (SP) provides made-to-order keycaps for a variety of applications, including keycaps in the SA, DSA, and DCS profiles for the mechanical keyboard community. Their SA profile in particular has a vintage appearance reminiscent of typewriters. SP works primarily with ABS, but has also been known to produce some PBT keycaps (e.g. DSA Granite).&lt;/p&gt;<br>
+				&lt;/div&gt;<br><br>
+
+				&lt;!-- https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-only-css--&gt;<br>
+				&lt;div class=&quot;product-reviews&quot;&gt;<br>
+					&lt;div&gt;<br>
+						&lt;input id=&quot;dropdown&quot; type=&quot;checkbox&quot;&gt;<br>
+						&lt;label for=&quot;dropdown&quot; tabindex=&quot;1&quot;&gt;&lt;h2 class=&quot;<br>dropdown-toggle&quot;&gt;Comments &amp; Reviews &lt;i class=&quot;fas fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/h2&gt;&lt;/label&gt;<br>
+						&lt;div class=&quot;dropdown-box&quot;&gt;<br>
+							&lt;h3&gt;John Doe&lt;/h3&gt;<br>
+							&lt;p&gt;Sick keycaps bro&lt;/p&gt;<br>
+						&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				&lt;/div&gt;<br>
 			&lt;/div&gt;<br>
-			&lt;/div&gt;
+		&lt;/div&gt;<br>
+
 		</code>
 	</section>
 

@@ -14,7 +14,6 @@
 
 html {
     background-color: #F4FAEE;
-    /*background-color: #FFFFFF;*/
 	color: #071013;
     /*changes all text into double spaced*/
     line-height: 2rem;
@@ -923,11 +922,8 @@ nav ul ul li {
 
 /* Hero Image Tutorial from W3Schools*/
 .home-hero-image {
-    /*height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
     position: relative;
+    margin-bottom: 0rem;
 }
 
 .home-hero-image a {
@@ -940,7 +936,6 @@ nav ul ul li {
     letter-spacing: 1rem;
     color: white;
     text-shadow: 0.3rem 0.3rem 0.5rem #1A281F;
-    margin-bottom: 3rem;
 }
 
 .hero-hover {
@@ -954,24 +949,15 @@ nav ul ul li {
 
 .home-hero-image img {
     flex-shrink: 1;
+    min-width: 100%;
     min-height: 100%;
 }
 
 .home-hero-image img:hover {
     opacity: 0.5;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 480px) {
-    .home-hero-image p {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .hero-hover {
-        width: 100%
-    }
-}
 
 .home-advertise-item {
     text-align: center;
@@ -991,24 +977,33 @@ nav ul ul li {
     cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
-    .page-header hero-header {
-        font-size: 1rem;
-    }
-
-    /*.home-advertise-item button {
-        size: 30%;
-    } */
-}
-
 .home-body-item {
     padding: 2rem;
     max-width: 50rem;
     margin-bottom: 2rem;
 }
 
-.hero-image {
-    object-fit: cover;
+
+.home-body-item .home-icon {
+    text-align: center;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 480px) {
+    .home-hero-image img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-hero-image p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+        .page-header hero-header {
+        font-size: 1rem;
+    }
 }
 
 /* ABOUT SECTION */
@@ -1050,10 +1045,6 @@ nav ul ul li {
     .team-grid-col {
         margin: 0rem;
     }
-}
-
-.home-body-item .home-icon {
-    text-align: center;
 }
 
 /*DETAILED PRODUCT SECTION */
@@ -1105,6 +1096,12 @@ nav ul ul li {
 .product-reviews input:checked ~ .dropdown-box {
     display: block;
 }
+
+.review-box {
+    padding:2rem;
+    border-bottom: 0.1rem solid #709775;
+}
+
 
 /* SERVICES SECTION */
 .services-banner-image img{
@@ -1208,7 +1205,6 @@ input[type=text]:focus, textarea {
     max-width: 50rem;
 }
 
-/*can merge these styles to reduce clutter*/
 .contact-us-submit-button {
     float: right;
 }
@@ -1257,6 +1253,10 @@ input[type=text]:focus, textarea {
 }
 
 @media screen and (max-width: 480px) {
+    .footer-container {
+        max-width: 100%;
+    }
+
     .footer-box {
         margin: 0rem;
         margin-bottom: 2rem;

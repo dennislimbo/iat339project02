@@ -87,14 +87,34 @@
 				</div>
 
 
-				<!-- https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-only-css-->	
 				<div class="product-reviews">
 					<div>
 						<input id="dropdown" type="checkbox">
 						<label for="dropdown" tabindex="1"><h2 class="dropdown-toggle">Comments & Reviews <i class="fas fa-angle-down"></i></h2></label>
 						<div class="dropdown-box">
-							<h3>John Doe</h3>
-							<p>Sick keycaps bro</p>
+							<div class="review-box">
+								<h3>John Doe</h3>
+								<p>Sick keycaps bro</p>
+							</div>
+							<div class="review-box">
+								<h3>Mary Sue</h3>
+								<p>Worth every penny, thanks!</p>
+							</div>
+						</div>
+						<div class="dropdown-box">
+							<h2>Write A Comment</h2>
+							<form>
+							<div class="contact-form-row">
+							  <label for="contact-form-name">Name:</label><br>
+							  <input type="text" id="contact-form-name" name="contact-form-name"><br>
+							</div>
+							<div class="contact-form-row">
+							  <label for="contact-form-msg">Message:</label><br><br>
+							  <textarea placeholder="Message" cols="80" rows="5"></textarea><br><br>
+							</div>
+							<div class="contact-form-row">
+							  <button class="button-style review-submit-button">submit</button>
+							</div>
 						</div>
 					</div>
 				</div>
