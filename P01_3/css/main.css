@@ -71,7 +71,6 @@ h4 {
 
 .vertical-order-summary .col-one, .vertical-order-summary .col-two {
 	height: auto;
-	margin: none;
 	background-color: transparent;
 	flex-basis: 0px;
 }
