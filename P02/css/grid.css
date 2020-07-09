@@ -362,6 +362,18 @@
         margin-bottom: .65em;
     }
 
+    .payment .row .col-one {
+        flex-basis: 0px;
+    }
+
+    .payment .row .col-one:first-child {
+        max-width: 335px;
+    }
+
+    .payment .submission .col-one {
+        flex-basis: auto;
+    }
+
     .payment .payment-outter .long-field input, .payment .payment-outter .long-field label, .payment .payment-outter .short-field label {
         max-width: 22em;
     }
@@ -508,24 +520,9 @@
         margin-bottom: 10px;
     }
 
-    .payment .payment-outter .radio {
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        flex-wrap: -webkit-flex;
-        flex-wrap: -ms-flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-
     .payment h1, .payment .payment-header, .payment .payment-outter {
         margin: 20px;
         text-align: left;
-    }
-
-    .payment .payment-outter .radio * {
-        margin-top: none;
     }
 
     .payment .payment-outter .radio p {

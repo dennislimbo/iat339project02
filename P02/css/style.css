@@ -48,6 +48,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .page-header {
@@ -199,8 +200,12 @@ nav ul ul li {
 		border-bottom: 0.25em solid #345F39;
         color: white;
     }
+
+    #desktop-shop {
+        display: none;
+    }
     
-    [id^=drop]:checked + ul {
+    [id^=drop]:checked + label + ul {
 		display: block;
     }
     
@@ -500,8 +505,10 @@ nav ul ul li {
 
 
 .image {
+    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.75);
     opacity: 1;
     transition: 0.5s ease;
+    
 }
 
 .product-listings .flex-col .thumbnail:hover .image {
@@ -1303,6 +1310,10 @@ input[type=text]:focus, textarea {
 }
 
 /* Payment */
+
+.payment input {
+    padding: 0 ;
+}
 
 .payment .payment-outter button:hover, .payment .payment-outter button:focus {
     background: #345F39;

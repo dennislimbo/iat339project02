@@ -8,33 +8,37 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 		<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="font-awesome/css/all.css">
 	</head>
 
 <body>
-	<nav>
+	<header>
 		<a href="index.html">Styleguide</a>
 		<a href="sitemap.html">Site Map</a>
 		<a href="finalwireframes.html">Wireframes</a>
+		<a href="citations.html">Citations</a>
 		<a href="https://github.com/dennislimbo/iat339project02">GitHub</a>
-	</nav>
+	</header>
 
-		<h1>HEADING 1.</h1>
-		<h2 class="bold-subheader">SAMPLE CODE:</h2>
-			<code class="code-block">
-				&lt;h1&gt;This is the heading.&lt;/h1&gt;
-			</code>	
-
-		<h2>Heading 2.</h2>
-		<h2 class="bold-subheader">SAMPLE CODE:</h2>
+	<h1>HEADING 1.</h1>
+	<h2 class="bold-subheader">SAMPLE CODE:</h2>
 		<code class="code-block">
-			&lt;h2&gt;This is the heading.&lt;/h2&gt;
-		</code>
+			&lt;h1&gt;This is the heading.&lt;/h1&gt;
+		</code>	
 
-		<h3>Heading 3</h3>
-		<h4 class="bold-subheader">SAMPLE CODE:</h4>
-		<code class="code-block">
-			&lt;h3&gt;This is the heading.&lt;/h3&gt;
-		</code>
+	<h2>Heading 2.</h2>
+	<h2 class="bold-subheader">SAMPLE CODE:</h2>
+	<code class="code-block">
+		&lt;h2&gt;This is the heading.&lt;/h2&gt;
+	</code>
+
+	<h3>Heading 3</h3>
+	<h4 class="bold-subheader">SAMPLE CODE:</h4>
+	<code class="code-block">
+		&lt;h3&gt;This is the heading.&lt;/h3&gt;
+	</code>
 
 	<h4>1. Paragraph:</h4>
 	<section id="paragraph">	
@@ -111,49 +115,131 @@
 	<section id="main-nav-bar">
 		<!-- add class to add specificity -->
 		<!-- Used W3Schools tutorial -->
-		<ul id="horizontal-nav-bar">
-			<li><a href="#" class="nav-bar-item">faq</a></li>
-			<li><a href="#" class="nav-bar-item">gallery</a></li>
-			<li><a href="#" class="nav-bar-item">services</a></li>
-			<li><a href="#" class="nav-bar-item">shop</a></li>
-			<li><a href="#" class="nav-bar-item">about</a></li>
-			<li><a href="#" class="nav-bar-item">home</a></li>
-			<li id="logo">zen keebs</li>
-		</ul>
+		<nav>
+			<div class="medium" id="logo"><i class="far fa-keyboard"></i> zen keebs</div>
+			<input type="checkbox" name="drop" id="drop">
+			<label for="drop" class="toggle"><i class="fas fa-bars"></i> Menu</label>
+			<ul class="menu">
+				<li><a href="index.html">home</a></li>
+				<li><a href="#">about</a></li>
+				<!-- Drop down-->
+				<li>
+					<a id="desktop-shop" href="#">shop <i class="fas fa-angle-down"></i></a>
+					<input type="checkbox" id="drop-1">
+					<label for="drop-1" class="toggle">shop <i class="fas fa-angle-down"></i></label>
+					<ul>
+						<li><a href="#">new arrivals</a></li>
+						<li><a href="#">keyboards</a></li>
+						<li><a href="#">accessories</a></li>
+						<li><a href="#">plates</a></li>
+						<li><a href="#">switches</a></li>
+						<li><a href="#">keycaps</a></li>
+					</ul>
+				</li>
+				<li><a href="#">services</a></li>
+				<li><a href="#">contact us</a></li>
+				<li><a aria-label="account" class="button" href="#"><i class="far fa-user-circle"></i></a></li>
+				<li><a aria-label="cart" class="button" href="#"><i class="fas fa-shopping-cart"></i> </a></li>
+			</ul>
+		</nav>
+
 
 		<h4>SAMPLE CODE:</h4>
 		<code class="code-block">
-			&lt;ul id="horizontal-nav-bar"&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;faq&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;gallery&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;services&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;shop&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;about&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li&gt;&lt;a href="#" class="nav-bar-item"&gt;home&lt;/a&gt;&lt;/li&gt;<br>
-				&lt;li id="logo"&gt;zen keebs&lt;/li&gt;<br>
-			&lt;/ul&gt;
+			&lt;nav&gt;<br>
+				&lt;div class=&quot;medium&quot; id=&quot;logo&quot;&gt;&lt;i class=&quot;far fa-keyboard&quot;&gt;&lt;/i&gt; zen keebs&lt;/div&gt;<br>
+				&lt;input type=&quot;checkbox&quot; name=&quot;drop&quot; id=&quot;drop&quot;&gt;<br>
+				&lt;label for=&quot;drop&quot; class=&quot;toggle&quot;&gt;&lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt; Menu&lt;/label&gt;<br>
+				&lt;ul class=&quot;menu&quot;&gt;<br>
+				&lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;home&lt;/a&gt;&lt;/li&gt;<br>
+				&lt;li&gt;&lt;a href=&quot;#&quot;&gt;about&lt;/a&gt;&lt;/li&gt;<br>
+				&lt;!-- Drop down--&gt;<br>
+				&lt;li&gt;<br>
+					&lt;a id=&quot;desktop-shop&quot; href=&quot;#&quot;&gt;shop &lt;i class=&quot;fas fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
+					&lt;input type=&quot;checkbox&quot; id=&quot;drop-1&quot;&gt;<br> 
+					&lt;label for=&quot;drop-1&quot; class=&quot;toggle&quot;&gt;shop &lt;i class=&quot;fas fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/label&gt;<br>
+					&lt;ul&gt;<br>
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt;new arrivals&lt;/a&gt;&lt;/li&gt;<br>
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt;keyboards&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt;accessories&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt;plates&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt;switches&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li&gt;&lt;a href=&quot;#&quot;&gt;keycaps&lt;/a&gt;&lt;/li&gt; <br>
+					&lt;/ul&gt; <br>
+				&lt;/li&gt; <br>
+				&lt;li&gt;&lt;a href=&quot;#&quot;&gt;services&lt;/a&gt;&lt;/li&gt; <br>
+				&lt;li&gt;&lt;a href=&quot;#&quot;&gt;contact us&lt;/a&gt;&lt;/li&gt; <br>
+				&lt;li&gt;&lt;a aria-label=&quot;account&quot; class=&quot;button&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;far fa-user-circle&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt; <br>
+				&lt;li&gt;&lt;a aria-label=&quot;cart&quot; class=&quot;button&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt; &lt;/a&gt;&lt;/li&gt; <br>
+				&lt;/ul&gt; <br>
+			&lt;/nav&gt;
 		</code>
 	</section> <!-- End of Main Nav Bar Section -->
 	
 	<h4>6. Grid Structure</h4>
 	<section id="grid-structure">
-		<div class="grid-container">
-			<div class="grid-box"></div>
-			<div class="grid-box"></div>
-			<div class="grid-box"></div>
-			<div class="grid-box"></div>
-		</div>
 
+		<h4>6.1 Dual Column 50% / 50%</h4>
+		<div class="container">
+			<div class="col-one"></div>
+			<div class="col-one"></div>
+		</div>
 		<h4>SAMPLE CODE:</h4>
 		<code class="code-block">
-			&lt;div class=&quot;grid-container&quot;&gt;<br>
-			&lt;div class=&quot;grid-box&quot;&gt;&lt;/div&gt;<br>
-			&lt;div class=&quot;grid-box&quot;&gt;&lt;/div&gt;<br>
-			&lt;div class=&quot;grid-box&quot;&gt;&lt;/div&gt;<br>
-			&lt;div class=&quot;grid-box&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;container&quot;&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</code>
+
+		<h4>6.2 Triple Column 33% / 33% / 33%</h4>
+		<div class="container">
+			<div class="col-one"></div>
+			<div class="col-one"></div>
+			<div class="col-one"></div>
+		</div>
+		<h4>SAMPLE CODE:</h4>
+		<code class="code-block">
+			&lt;div class=&quot;container&quot;&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</code>
+
+		<h4>6.3 Quad Column 25% / 25% / 25% / 25%</h4>
+		<div class="container">
+			<div class="col-one"></div>
+			<div class="col-one"></div>
+			<div class="col-one"></div>
+			<div class="col-one"></div>
+		</div>
+		<h4>SAMPLE CODE:</h4>
+		<code class="code-block">
+			&lt;div class=&quot;container&quot;&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</code>
+
+		<h4>6.4 Triple Column 25% / 50% / 25%</h4>
+		<div class="container">
+			<div class="col-one"></div>
+			<div class="col-two"></div>
+			<div class="col-one"></div>
+		</div>
+		<h4>SAMPLE CODE:</h4>
+		<code class="code-block">
+			&lt;div class=&quot;container&quot;&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;col-two&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;col-one&quot;&gt;&lt;/div&gt;<br>
 			&lt;/div&gt;
 		</code>
 	</section>
+
 
 	<h4>7. Product Module</h4>
 	<section id="product-module">
@@ -187,51 +273,131 @@
 		</code>
 	</section>
 
-	<h2 class="bold-subheader">8. Other Modules</h2>
-	<section id="shopping-cart">
-		<h2>Your Shopping Cart</h2>
-		<div class="grid-container">
-			<div class="your-shopping-cart">
-				<img src="img/cart_keyboard.jpg" class="item-listing" alt="Product Image 1">
-				<h3>$50</h3>
-				<img src="img/cart_keyboard.jpg" class="item-listing" alt="Product Image 2">
-				<h3>$50</h3>
-				<img src="img/cart_keyboard.jpg" class="item-listing" alt="Product Image 3">
-				<h3>$50</h3>
+	<h2 class="bold-subheader">8. Vertical Cart Summary Module</h2>
+	<section class="vertical-order-summary">
+		<div class="cart-item">
+			<div class="col-one">
+				<img src="img/keycaps/sa-bubble-233.png" alt="base kit image for sp sa bubble">
 			</div>
-
-			<div class="cart-info">
-				<h2>Summary</h2>
-				<h3 class="bold-subheader">Subtotal:</h3>
-				<h3 class="bold-subheader">Taxes:</h3>
-				<h3 class="bold-subheader">Total: $200</h3>
-				<button class="check-out-button">check out</button>
+			<div class="col-two">
+				<h2 class="normal item-name">SP SA Bubble Keycap Set</h2>
+				<a class="modify" href="#">Modify</a>
+				<i class="fas fa-grip-lines-vertical"></i>
+				<a class="remove" href="#">Remove</a>
+			</div>
+			<div class="col-one">
+				<p class="price">$177.00</p>
 			</div>
 		</div>
-
-		<h4>SAMPLE CODE</h4>
+		<div class="cart-item">
+			<div class="col-one">
+				<img src="img/keycaps/gmk_modo-233.png" alt="base kit image for gmk modern dolch 2">
+			</div>
+			<div class="col-two">
+				<h2 class="normal item-name">GMK Modern Dolch 2 Keycap Set</h2>
+				<a class="modify" href="#">Modify</a>
+				<i class="fas fa-grip-lines-vertical"></i>
+				<a class="remove" href="#">Remove</a>
+			</div>
+			<div class="col-one">
+				<p class="price">$99.99</p>
+			</div>
+		</div>
+		<div class="cart-item">
+			<div class="col-one">
+				<img src="img/keyboard/rama_m65-233.png" alt="close up photo of M65-B keyboard made by Rama Works">
+			</div>
+			<div class="col-two">
+				<h2 class="normal item-name">Rama Works M65-B Keyboard Kit</h2>
+				<a class="modify" href="#">Modify</a>
+				<i class="fas fa-grip-lines-vertical"></i>
+				<a class="remove" href="#">Remove</a>
+			</div>
+			<div class="col-one">
+				<p class="price">$390.00</p>
+			</div>
+		</div>
+		<h2 class="medium">Summary</h2>
+		<div class="order-price-summary medium">
+			<div class="col-three">
+				<h3 class="medium subtotal">Subtotal</h3>
+				<h3 class="medium est-shipping">Estimated Shipping & Handling</h3>
+				<h3 class="medium taxes">Taxes</h3>
+				<h3 class="medium myTotal">Total</h3>
+			</div>
+			<div class="col-one">
+				<p class="subtotal-price">$666.99</p>
+				<p class="est-shipping-price">$15.00</p>
+				<p class="taxes-price">$0.00</p>
+				<p class="total-price">$681.99</p>
+			</div>
+		</div>
+	</section>
+	<section id="module-code">
+		<h2 class="bold-subheader">SAMPLE CODE:</h2>
 		<code class="code-block">
-			&lt;h2&gt;Your Shopping Cart&lt;/h2&gt;<br>
-			&lt;div class=&quot;grid-container&quot;&gt;<br>
-			&lt;div class=&quot;your-shopping-cart&quot;&gt;<br>
-			&lt;img src=&quot;img/cart_keyboard.jpg&quot; class=&quot;item-listing&quot; alt=&quot;Product Image 1&quot;&gt;<br>
-			&lt;h3&gt;$50&lt;/h3&gt;<br>
-			&lt;img src=&quot;img/cart_keyboard.jpg&quot; class=&quot;item-listing&quot; alt=&quot;Product Image 2&quot;&gt;<br>
-			&lt;h3&gt;$50&lt;/h3&gt;<br>&lt;img src=&quot;img/cart_keyboard.jpg&quot; class=&quot;item-listing&quot; alt=&quot;Product Image 3&quot;&gt;<br>
-			&lt;h3&gt;$50&lt;/h3&gt;<br>
-			&lt;/div&gt;<br>
-			&lt;div class=&quot;cart-info&quot;&gt;<br>
-			&lt;h2&gt;Summary&lt;/h2&gt;<br>
-			&lt;h4&gt;Subtotal:&lt;/h4&gt;<br>
-			&lt;h4&gt;Taxes:&lt;/h4&gt;<br>
-			&lt;h4&gt;Total: $200&lt;/h4&gt;<br>
-			&lt;button class=&quot;check-out-button&quot;&gt;check out&lt;/button&gt;<br>
-			&lt;/div&gt;<br>
-			&lt;/div&gt;
+				&lt;section class=&quot;vertical-order-summary&quot;&gt; <br>
+					&lt;div class=&quot;cart-item&quot;&gt; <br>
+						&lt;div class=&quot;col-one&quot;&gt; <br>
+							&lt;img src=&quot;img/keycaps/sa-bubble-233.png&quot; alt=&quot;base kit image for sp sa bubble&quot;&gt; <br>
+						&lt;/div&gt; <br>
+						&lt;div class=&quot;col-two&quot;&gt; <br>
+							&lt;h2 class=&quot;normal item-name&quot;&gt;SP SA Bubble Keycap Set&lt;/h2&gt; <br>
+							&lt;a class=&quot;modify&quot; href=&quot;#&quot;&gt;Modify&lt;/a&gt; <br>
+							&lt;i class=&quot;fas fa-grip-lines-vertical&quot;&gt;&lt;/i&gt; <br>
+							&lt;a class=&quot;remove&quot; href=&quot;#&quot;&gt;Remove&lt;/a&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class=&quot;col-one&quot;&gt; <br>
+								&lt;p class=&quot;price&quot;&gt;$177.00&lt;/p&gt; <br>
+							&lt;/div&gt; <br>
+						&lt;/div&gt; <br>
+						&lt;div class=&quot;cart-item&quot;&gt; <br>
+							&lt;div class=&quot;col-one&quot;&gt; <br>
+								&lt;img src=&quot;img/keycaps/gmk_modo-233.png&quot; alt=&quot;base kit image for gmk modern dolch 2&quot;&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class=&quot;col-two&quot;&gt; <br>
+							&lt;h2 class=&quot;normal item-name&quot;&gt;GMK Modern Dolch 2 Keycap Set&lt;/h2&gt; <br>
+							&lt;a class=&quot;modify&quot; href=&quot;#&quot;&gt;Modify&lt;/a&gt; <br>
+							&lt;i class=&quot;fas fa-grip-lines-vertical&quot;&gt;&lt;/i&gt; <br>
+							&lt;a class=&quot;remove&quot; href=&quot;#&quot;&gt;Remove&lt;/a&gt; <br>
+						&lt;/div&gt; <br>
+						&lt;div class=&quot;col-one&quot;&gt; <br>
+							&lt;p class=&quot;price&quot;&gt;$99.99&lt;/p&gt; <br>
+						&lt;/div&gt; &lt;/div&gt; <br>
+						&lt;div class=&quot;cart-item&quot;&gt; <br>
+							&lt;div class=&quot;col-one&quot;&gt; <br>
+								&lt;img src=&quot;img/keyboard/rama_m65-233.png&quot; alt=&quot;close up photo of M65-B keyboard made by Rama Works&quot;&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class=&quot;col-two&quot;&gt; <br>
+								&lt;h2 class=&quot;normal item-name&quot;&gt;Rama Works M65-B Keyboard Kit&lt;/h2&gt; <br>
+								&lt;a class=&quot;modify&quot; href=&quot;#&quot;&gt;Modify&lt;/a&gt; <br>
+								&lt;i class=&quot;fas fa-grip-lines-vertical&quot;&gt;&lt;/i&gt; <br>
+								&lt;a class=&quot;remove&quot; href=&quot;#&quot;&gt;Remove&lt;/a&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class=&quot;col-one&quot;&gt; <br>
+								&lt;p class=&quot;price&quot;&gt;$390.00&lt;/p&gt; <br>
+							&lt;/div&gt; <br>
+						&lt;/div&gt; <br>
+						&lt;h2 class=&quot;medium&quot;&gt;Summary&lt;/h2&gt; <br>
+						&lt;div class=&quot;order-price-summary medium&quot;&gt; <br>
+							&lt;div class=&quot;col-three&quot;&gt; <br>
+								&lt;h3 class=&quot;medium subtotal&quot;&gt;Subtotal&lt;/h3&gt; <br>
+								&lt;h3 class=&quot;medium est-shipping&quot;&gt;Estimated Shipping &amp; Handling&lt;/h3&gt; <br>
+								&lt;h3 class=&quot;medium taxes&quot;&gt;Taxes&lt;/h3&gt; <br>
+								&lt;h3 class=&quot;medium myTotal&quot;&gt;Total&lt;/h3&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class=&quot;col-one&quot;&gt; <br>
+								&lt;p class=&quot;subtotal-price&quot;&gt;$666.99&lt;/p&gt; <br>
+								&lt;p class=&quot;est-shipping-price&quot;&gt;$15.00&lt;/p&gt; <br>
+								&lt;p class=&quot;taxes-price&quot;&gt;$0.00&lt;/p&gt; <br>
+								&lt;p class=&quot;total-price&quot;&gt;$681.99&lt;/p&gt; <br>
+							&lt;/div&gt; <br>
+					&lt;/div&gt; <br>
+				&lt;/section&gt;
 		</code>
 	</section>
 
-	<h4>9. Color Swatches</h4>
+	<h2>9. Color Swatches</h2>
 	<section id="color-palette">
 		<h2>Swatches:</h2>
 		<div class="box swatch-one"></div>
