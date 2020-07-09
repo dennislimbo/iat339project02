@@ -510,10 +510,6 @@
         text-align: left;
     }
 
-    .payment .payment-outter .radio * {
-        margin-top: none;
-    }
-
     .payment .payment-outter .radio p {
         position: absolute;
     }
