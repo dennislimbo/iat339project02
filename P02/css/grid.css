@@ -10,16 +10,32 @@
 	justify-content: center;
 }
 
+.hero-hover {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 /* ABOUT US SECTION */
 .about-body-container {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .about-team-grid-container {
 	display: flex;
 	flex-direction: row;
+}
+
+.team-grid-img {
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	.about-team-grid-container {
+		flex-direction: column;
+	}
 }
 
 /* DETAILED PRODUCT SECTION */
@@ -102,15 +118,19 @@
 }
 
 /* CONTACT US SECTION */
+.contact-us-page {
+	display: flex;
+	justify-content: center;
+}
+
 .contact-us-info-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 
 .contact-us-body-container {
 	display: flex;
-	justify-content: center;
+
 }
 
 
@@ -122,13 +142,8 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1366px) {
 	.footer-container {
-		display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        flex-wrap: -webkit-flex;
-        flex-wrap: -ms-flex;
         flex-wrap: wrap;
         flex-direction: column;
 	}
