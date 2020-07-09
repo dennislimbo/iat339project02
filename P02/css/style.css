@@ -142,6 +142,10 @@ nav a {
     border-bottom: 0.25em solid transparent;
 }
 
+#logo a {
+    border-bottom: none;
+}
+
 .toggle, [id^=drop] {
 	display: none;
 }
@@ -174,7 +178,8 @@ nav ul ul li {
 		padding: 0;
 		width: 100%;
 		text-align: center;
-		float: none;
+        float: none;
+        line-height: 50px;
     }
     
     nav {
