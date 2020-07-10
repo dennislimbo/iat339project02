@@ -1083,6 +1083,8 @@ nav ul ul li {
 }
 
 .dropdown-toggle {
+    font-size: 1.25rem;
+    font-weight: 600;
     border-bottom: 0.1rem solid #709775;
     padding: 1rem;
     cursor: pointer;
