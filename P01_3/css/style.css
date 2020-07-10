@@ -103,40 +103,40 @@ nav {
 
 #logo {
     display: block;
-    padding: 0 30px;
-    float: left;
-    font-size:1.875em;
+	padding: 0 30px;
+	float: left;
+	font-size:1.875em;
     font-weight: 600;
     color: #f2f2f2;
 }
 
 nav:after {
-    content:"";
-    display:table;
-    clear:both;
+	content:"";
+	display:table;
+	clear:both;
 }
 
 nav ul {
-    float: right;
-    padding:0;
-    margin:0;
-    list-style: none;
-    position: relative;
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
 }
 
 nav ul li {
-    margin: 0px;
+	margin: 0px;
     float: left;
     z-index: 1000000;
 }
 
 nav a {
-    display:block;
-    padding:14px 20px;  
+	display:block;
+	padding:14px 20px;	
     color: #f2f2f2;
     font-size: 1.2em;
     background-color: #709775;
-    font-size:1.0625em;
+	font-size:1.0625em;
     text-decoration:none;
     border-bottom: 0.25em solid transparent;
 }
@@ -146,7 +146,7 @@ nav a {
 }
 
 .toggle, [id^=drop] {
-    display: none;
+	display: none;
 }
 
 nav a:hover, nav a:focus {
@@ -155,52 +155,52 @@ nav a:hover, nav a:focus {
 }
 
 nav ul ul {
-    display: none;
-    position: absolute; 
-    top: 60px; 
+	display: none;
+	position: absolute; 
+	top: 60px; 
 }
 
 nav ul li:hover > ul {
-    display:inherit;
+	display:inherit;
 }
 
 nav ul ul li {
-    width:170px;
-    float:none;
-    display:list-item;
-    position: relative;
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
 }
 
 @media screen and (max-width: 480px) {
     #logo {
-        display: block;
-        padding: 0;
-        width: 100%;
-        text-align: center;
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
         float: none;
         line-height: 50px;
     }
     
     nav {
-        margin: 0;
+		margin: 0;
     }
     
     .toggle + a, .menu {
-        display: none;
+		display: none;
     }
     
     .toggle {
-        display: block;
-        background-color: #709775;
-        padding:14px 20px;  
-        color: #f2f2f2;
-        font-size:1.0625em;
-        text-decoration:none;
-        border:none;
+		display: block;
+		background-color: #709775;
+		padding:14px 20px;	
+		color: #f2f2f2;
+		font-size:1.0625em;
+		text-decoration:none;
+		border:none;
     }
     
     .toggle:hover {
-        border-bottom: 0.25em solid #345F39;
+		border-bottom: 0.25em solid #345F39;
         color: white;
     }
 
@@ -209,51 +209,51 @@ nav ul ul li {
     }
     
     [id^=drop]:checked + label + ul {
-        display: block;
+		display: block;
     }
     
     nav ul li {
-        display: block;
-        width: 100%;
+		display: block;
+		width: 100%;
     }
     
     nav ul ul .toggle,
-    nav ul ul a {
-        padding: 0 40px;
-    }
+	nav ul ul a {
+		padding: 0 40px;
+	}
     
     nav a:hover {
-        border-bottom: 0.25em solid #345F39;
+		border-bottom: 0.25em solid #345F39;
         color: white;
     }
     
     nav ul li ul li .toggle,
-    nav ul ul a {
-        padding:14px 20px;  
-        color:#FFF;
-        font-size:1.0625em; 
+	nav ul ul a {
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:1.0625em; 
     }
     
     nav ul li ul li .toggle,
-    nav ul ul a {
-        background-color: #345F39; 
+	nav ul ul a {
+		background-color: #345F39; 
     }
     
     nav ul ul {
-        float: none;
-        position:static;
-        color: #ffffff;
+		float: none;
+		position:static;
+		color: #ffffff;
     }
 
     nav ul ul li:hover > ul,
-    nav ul li:hover > ul {
-        display: none;
+	nav ul li:hover > ul {
+		display: none;
     }
 
     nav ul ul li {
-        display: block;
-        width: 100%;
-    }
+		display: block;
+		width: 100%;
+	}
 }
 
 /* Wayfinding Styling */

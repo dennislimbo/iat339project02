@@ -114,32 +114,33 @@
 	<h4>5. Navigation Bar</h4>
 	<section id="main-nav-bar">
 		<!-- add class to add specificity -->
-		<!-- Used W3Schools tutorial -->
 		<nav>
-			<div class="medium" id="logo"><i class="far fa-keyboard"></i> zen keebs</div>
+			<div class="medium" id="logo">
+				<a id="homeLogo"><i class="far fa-keyboard"></i> zen keebs</a>
+			</div>
 			<input type="checkbox" name="drop" id="drop">
 			<label for="drop" class="toggle"><i class="fas fa-bars"></i> Menu</label>
 			<ul class="menu">
-				<li><a href="index.html">home</a></li>
-				<li><a href="#">about</a></li>
+				<li><a>home</a></li>
+				<li><a>about</a></li>
 				<!-- Drop down-->
 				<li>
 					<a id="desktop-shop" href="#">shop <i class="fas fa-angle-down"></i></a>
 					<input type="checkbox" id="drop-1">
 					<label for="drop-1" class="toggle">shop <i class="fas fa-angle-down"></i></label>
 					<ul>
-						<li><a href="#">new arrivals</a></li>
-						<li><a href="#">keyboards</a></li>
-						<li><a href="#">accessories</a></li>
-						<li><a href="#">plates</a></li>
-						<li><a href="#">switches</a></li>
-						<li><a href="#">keycaps</a></li>
+						<li><a>new arrivals</a></li>
+						<li><a>keyboards</a></li>
+						<li><a>accessories</a></li>
+						<li><a>plates</a></li>
+						<li><a>switches</a></li>
+						<li><a>keycaps</a></li>
 					</ul>
 				</li>
-				<li><a href="#">services</a></li>
-				<li><a href="#">contact us</a></li>
-				<li><a aria-label="account" class="button" href="#"><i class="far fa-user-circle"></i></a></li>
-				<li><a aria-label="cart" class="button" href="#"><i class="fas fa-shopping-cart"></i> </a></li>
+				<li><a>services</a></li>
+				<li><a>contact us</a></li>
+				<li><a aria-label="account" class="button"><i class="far fa-user-circle"></i></a></li>
+				<li><a aria-label="cart" class="button"><i class="fas fa-shopping-cart"></i> </a></li>
 			</ul>
 		</nav>
 
@@ -147,7 +148,9 @@
 		<h4>SAMPLE CODE:</h4>
 		<code class="code-block">
 			&lt;nav&gt;<br>
-				&lt;div class=&quot;medium&quot; id=&quot;logo&quot;&gt;&lt;i class=&quot;far fa-keyboard&quot;&gt;&lt;/i&gt; zen keebs&lt;/div&gt;<br>
+				&lt;div class=&quot;medium&quot; id=&quot;logo&quot;&gt; <br>
+					&lt;a href=&quot;index.html&quot; id=&quot;homeLogo&quot;&gt;&lt;i class=&quot;far fa-keyboard&quot;&gt;&lt;/i&gt; zen keebs&lt;/a&gt; <br>
+				&lt;/div&gt; <br>
 				&lt;input type=&quot;checkbox&quot; name=&quot;drop&quot; id=&quot;drop&quot;&gt;<br>
 				&lt;label for=&quot;drop&quot; class=&quot;toggle&quot;&gt;&lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt; Menu&lt;/label&gt;<br>
 				&lt;ul class=&quot;menu&quot;&gt;<br>
