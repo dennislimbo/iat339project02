@@ -22,7 +22,7 @@
 		<a href="https://github.com/dennislimbo/iat339project02">GitHub</a>
 	</header>
 
-	<h1>HEADING 1.</h1>
+	<h1 class="page-header">HEADING 1.</h1>
 	<h2 class="bold-subheader">SAMPLE CODE:</h2>
 		<code class="code-block">
 			&lt;h1&gt;This is the heading.&lt;/h1&gt;
@@ -275,15 +275,35 @@
 					<p>Signature Plastics is an American manufacturer of keycaps specializing in injection moulding. Founded in 2001, Signature Plastics (SP) provides made-to-order keycaps for a variety of applications, including keycaps in the SA, DSA, and DCS profiles for the mechanical keyboard community. Their SA profile in particular has a vintage appearance reminiscent of typewriters. SP works primarily with ABS, but has also been known to produce some PBT keycaps (e.g. DSA Granite).</p>
 				</div>
 
-
-				<!-- https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-only-css-->	
 				<div class="product-reviews">
 					<div>
 						<input id="dropdown" type="checkbox">
-						<label for="dropdown" tabindex="1"><h2 class="dropdown-toggle">Comments & Reviews <i class="fas fa-angle-down"></i></h2></label>
+						<label for="dropdown" class="dropdown-toggle">Comments & Reviews <i class="fas fa-angle-down"></i></label>
 						<div class="dropdown-box">
-							<h3>John Doe</h3>
-							<p>Sick keycaps bro</p>
+							<div class="review-box">
+								<h3>John Doe</h3>
+								<p>Sick keycaps bro</p>
+							</div>
+							<div class="review-box">
+								<h3>Mary Sue</h3>
+								<p>Worth every penny, thanks!</p>
+							</div>
+						</div>
+						<div class="dropdown-box">
+							<h2>Write A Comment</h2>
+							<form>
+							<div class="contact-form-row">
+							  <label for="contact-form-name">Name:</label><br>
+							  <input type="text" id="contact-form-name" name="contact-form-name"><br>
+							</div>
+							<div class="contact-form-row">
+							  <label for="contact-form-msg">Message:</label><br><br>
+							  <textarea placeholder="Message" cols="80" rows="5"></textarea><br><br>
+							</div>
+							<div class="contact-form-row">
+							  <button class="button-style review-submit-button">submit</button>
+							</div>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -324,19 +344,39 @@
 					&lt;p&gt;Signature Plastics is an American manufacturer of keycaps specializing in injection moulding. Founded in 2001, Signature Plastics (SP) provides made-to-order keycaps for a variety of applications, including keycaps in the SA, DSA, and DCS profiles for the mechanical keyboard community. Their SA profile in particular has a vintage appearance reminiscent of typewriters. SP works primarily with ABS, but has also been known to produce some PBT keycaps (e.g. DSA Granite).&lt;/p&gt;<br>
 				&lt;/div&gt;<br><br>
 
-				&lt;!-- https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-only-css--&gt;<br>
 				&lt;div class=&quot;product-reviews&quot;&gt;<br>
 					&lt;div&gt;<br>
 						&lt;input id=&quot;dropdown&quot; type=&quot;checkbox&quot;&gt;<br>
-						&lt;label for=&quot;dropdown&quot; tabindex=&quot;1&quot;&gt;&lt;h2 class=&quot;<br>dropdown-toggle&quot;&gt;Comments &amp; Reviews &lt;i class=&quot;fas fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/h2&gt;&lt;/label&gt;<br>
+						&lt;label for=&quot;dropdown&quot; class=&quot;dropdown-toggle&quot;&gt;Comments &amp; Reviews &lt;i class=&quot;fas fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/label&gt;<br>
 						&lt;div class=&quot;dropdown-box&quot;&gt;<br>
-							&lt;h3&gt;John Doe&lt;/h3&gt;<br>
-							&lt;p&gt;Sick keycaps bro&lt;/p&gt;<br>
+							&lt;div class=&quot;review-box&quot;&gt;<br>
+								&lt;h3&gt;John Doe&lt;/h3&gt;<br>
+								&lt;p&gt;Sick keycaps bro&lt;/p&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class=&quot;review-box&quot;&gt;<br>
+								&lt;h3&gt;Mary Sue&lt;/h3&gt;<br>
+								&lt;p&gt;Worth every penny, thanks!&lt;/p&gt;<br>
+							&lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;div class=&quot;dropdown-box&quot;&gt;<br>
+							&lt;h2&gt;Write A Comment&lt;/h2&gt;<br>
+							&lt;form&gt;<br>
+							&lt;div class=&quot;contact-form-row&quot;&gt;<br>
+							  &lt;label for=&quot;contact-form-name&quot;&gt;<br>
+							  Name:&lt;/label&gt;&lt;br&gt;<br>
+							  &lt;input type=&quot;text&quot; id=&quot;contact-form-name&quot; name=&quot;contact-form-name&quot;&gt;&lt;br&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class=&quot;contact-form-row&quot;&gt;<br>
+							  &lt;label for=&quot;contact-form-msg&quot;&gt;<br>Message:&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br>
+							  &lt;textarea placeholder=&quot;Message&quot;<br>cols=&quot;80&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class=&quot;contact-form-row&quot;&gt;<br>
+							  &lt;button class=&quot;button-style review-submit-button&quot;&gt;submit&lt;/button&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;/form&gt;<br>
 						&lt;/div&gt;<br>
 					&lt;/div&gt;<br>
 				&lt;/div&gt;<br>
-			&lt;/div&gt;<br>
-		&lt;/div&gt;<br>
 
 		</code>
 	</section>
